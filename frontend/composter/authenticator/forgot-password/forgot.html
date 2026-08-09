@@ -7,19 +7,20 @@
 </head>
 
 <link rel="stylesheet" href="forgot.css">
+<link rel="stylesheet" href="../authenticator.css">
 
 <body>
-    <form id="Forgot-Password">
-        <div class="form-forgot">
+    <form id="Form">
+        <div class="image-form">
             <div class="form-forgot-logo">
                 <img src="/frontend/assets/logo.jpg" alt="logo.jpg">
             </div>
-            <div class="form-forgot-title">
+            <div class="title">
                 <h1>Quen mat khau</h1>
                 <span>Nhap email de nhap lien ket dat lai mat khau</span>
             </div>
         </div>
-        <div class="forgot-email">
+        <div class="email">
             <span>Email</span>
             <input type="email" name="user-email" id="your email">
         </div>
@@ -32,7 +33,7 @@
                 <span>hoac</span>
             </div>
             <div class="go-back">
-                <button>Quay lai dang nhap</button>
+                <button id="listen-button" type="button">Quay lai dang nhap</button>
             </div>
         </div>
         <div class="email-check">
@@ -40,4 +41,7 @@
         </div>
     </form>
 </body>
+
+    <script src="forgot.js"></script>
+    
 </html>
