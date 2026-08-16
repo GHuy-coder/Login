@@ -1,0 +1,30 @@
+
+
+.password-remember{
+    display: flex;
+    justify-content: space-between;
+}
+.dang-nhap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+}
+.new-acc{
+    text-align: center;
+}
+.new-acc span{
+    font-size: 1.2rem;
+}
+
+.new-acc a{
+    font-size: 1.2rem;
+}
+
+.password-remember span{
+    font-size: 1.2rem;
+}
+
+.password-remember a{
+    font-size: 1.2rem;
+}
