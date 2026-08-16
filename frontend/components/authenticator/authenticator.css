@@ -1,0 +1,143 @@
+*{
+    font-size: 14px;
+}
+
+body{
+    background-image: url("/frontend/assets/cute.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 25rem;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.image-form{
+    text-align: center;
+}
+.title h1{
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+.title span{
+    font-size: 1.4rem;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+.email span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.email input{
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+}
+.password span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.password input{
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.name input{
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.check-password{
+    display: flex;
+    flex-direction: column;
+}
+.check-password span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.check-password input{
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.class{
+    display: flex;
+    flex-direction: column;
+}
+.class span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.class select{
+    width: 100%;
+    height: 2.5rem;
+    
+}
+
+.ozone {
+    position: relative;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.ozone hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.ozone span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 5px;
+    background-color: white;
+}
+
+.google button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-size: 1.3rem;
+    color: blue;
+}
+
+.classic button{
+    width: 100%;
+    height: 3rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
