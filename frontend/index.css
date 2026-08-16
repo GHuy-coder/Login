@@ -1,0 +1,200 @@
+* {
+    font-size: 14px;
+}
+
+header{
+    display: flex;  
+    justify-content: space-between;
+    border-bottom: solid gray 1px;
+}
+
+.menu{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.menu a{
+    font-size: 1.8rem;
+
+}
+.search-history input{
+    width: 30rem;
+    height: 3rem;
+}
+.notification span{
+    font-size: 3rem;
+}
+.search-history{
+    padding-top: 10px;
+}
+
+.ur-acc{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.ur-acc img{
+    width: 5rem;
+    height: 5rem;
+}
+.information span{
+    font-size: 1.5rem;
+}
+
+#name{
+    font-weight: bold;
+}
+
+.important{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.title span{
+    font-size: 1.5rem;
+}
+
+.main-topic{
+    display: flex;
+    flex-direction: column;
+}
+.main-topic span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.write span{
+    font-size: 1.4rem;
+
+}
+.write{
+    width: 25%;
+}
+
+.ur-action button{
+    width: 15rem;
+    height: 3rem;
+}
+.ur-action span{
+    font-size: 1.4rem;
+}
+
+#theme{
+    background-image: url("/frontend/assets/cute.jpg");
+    background-repeat: no-repeat;
+    background-size: 70vw 100vh;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+}
+
+.topic-ideas img{
+    width: 5rem;
+    height: 5rem;
+}
+.topic-ideas{
+    display: flex;
+    padding: 10px;
+    padding-right: 30px;
+    border: solid gray 1px;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.info span{
+    font-size: 1.5rem;
+}
+
+#main-info{
+    font-weight: bold;
+}
+.topic{
+    display: flex;
+    gap: 2.25rem;
+}
+
+.featured img{
+    width: 30rem;
+    height: 10rem;
+}
+
+#subject{
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+#Featured{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.author-post-acc img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.interactions{
+    display: flex;
+}
+.avatar{
+    display: flex;
+}
+
+.author-post-acc{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px ;
+    padding-top: 10px;
+}
+.private-information {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.featured{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.box{
+    display: flex;
+}
+
+.addition a{
+    font-size: 1.2rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
