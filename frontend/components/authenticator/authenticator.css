@@ -11,7 +11,7 @@ body{
 
 }
 
-#Form{
+.form{
     background-color: #fff;
     border-radius: 1rem;
     width: 25rem;
