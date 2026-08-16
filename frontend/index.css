@@ -196,5 +196,9 @@ header{
 .calendar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.list-of-saved-post img{
+    width: ;
 }
