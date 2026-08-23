@@ -1,836 +1,349 @@
 <!DOCTYPE html>
-<html lang="vi">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Trang học tập</title>
-
-    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
 </head>
 
+<link rel="stylesheet" href="index.css">
+
 <body>
-
-    <!-- ===================== -->
-    <!-- HEADER -->
-    <!-- ===================== -->
-
     <header>
-
         <div class="logo">
-            <img src="./assets/logo.jpg" alt="Logo">
+            <img src="../frontend/assets/logo.jpg" alt="logo-image">
         </div>
-
         <div class="menu">
             <nav>
-                <a href="#">🏠 Trang chủ</a>
-                <a href="#">📄 Bài viết</a>
-                <a href="#">🧠 Chủ đề</a>
-                <a href="#">📝 Bài tập</a>
+                <a href="">🏠 Trang chu</a>
+                <a href="">📄 Bai viet</a>
+                <a href="">🧠 Chu de</a>
+                <a href="">📝 Bai tap</a>
             </nav>
         </div>
-
         <div class="important">
-
             <div class="search-history">
-                <input
-                    type="search"
-                    name="search"
-                    id="search"
-                    placeholder="Tìm kiếm..."
-                >
+                <input type="search" name="ur-search-history" id="ur-search-history">
             </div>
-
             <div class="notification">
                 <span>🔔</span>
             </div>
-
             <div class="ur-acc">
-
-                <img
-                    src="./assets/DON-CUTE.jpg"
-                    alt="Ảnh đại diện"
-                >
-
+                <img src="../frontend/assets/DON-CUTE.jpg" alt="acc-ava">
                 <div class="information">
-                    <span class="user-name">
-                        Chào, Gia Huy
-                    </span>
-
-                    <span>Lớp 10A1</span>
+                    <span id="name">Chao, Gia Huy</span>
+                    <span>Lop 10A1</span>
                 </div>
-
             </div>
-
         </div>
-
     </header>
-
-
-    <!-- ===================== -->
-    <!-- MAIN -->
-    <!-- ===================== -->
-
     <main>
-
         <div class="box">
-
-            <!-- ===================== -->
-            <!-- LEFT -->
-            <!-- ===================== -->
-
             <div class="left">
-
-                <!-- HERO -->
-
                 <section id="theme">
-
                     <div class="knowledge-everyday">
-
                         <div class="title">
-                            <span>Xin chào Gia Huy! 👋</span>
+                            <span>Xin chao Gia Huy! 👋</span>
                         </div>
-
                         <div class="main-topic">
-                            <span>Khám phá kiến thức</span>
-                            <span>mỗi ngày</span>
+                            <span>Kham pha kien thuc</span>
+                            <span>moi ngay</span>
                         </div>
-
                         <div class="write">
-                            <span>
-                                Đọc bài hay, học điều mới và phát triển
-                                bản thân mỗi ngày cùng Blog Học Sinh!
-                            </span>
+                            <span>Doc bai hay, hoc dieu moi va phat trien ban than moi ngay cung Blog Hoc Sinh!</span>
                         </div>
-
                         <div class="ur-action">
-
-                            <button type="button">
-                                Khám phá bài viết 📀
-                            </button>
-
-                            <button type="button">
-                                Làm bài tập 📝
-                            </button>
-
+                            <button>Kham pha bai viet 📀</button>
+                            <button>Lam bai tap 📝</button>
                         </div>
-
                     </div>
-
                 </section>
-
-
-                <!-- POPULAR TOPICS -->
-
                 <section id="Topic">
-
                     <div class="title">
-                        <span>📖 Chủ đề phổ biến</span>
+                        <span>📖 Chu de pho bien</span>
                     </div>
-
                     <div class="topic">
-
                         <div class="topic-ideas">
-
-                            <img
-                                src="./assets/Tam-&-GiaHuy.png"
-                                alt="Toán"
-                            >
-
+                            <img src="/frontend/assets/Tam-&-GiaHuy.png" alt="frog.jpg">
                             <div class="info">
-                                <span class="main-info">Toán</span>
-                                <span>1.248 bài viết</span>
+                                <span id="main-info">Toan</span>
+                                <span>1.248 bai viet</span>
                             </div>
-
                         </div>
-
-
                         <div class="topic-ideas">
-
-                            <img
-                                src="./assets/Tam-&-GiaHuy.png"
-                                alt="Văn"
-                            >
-
+                            <img src="/frontend/assets/Tam-&-GiaHuy.png" alt="frog.jpg">
                             <div class="info">
-                                <span class="main-info">Văn</span>
-                                <span>986 bài viết</span>
+                                <span id="main-info">Van</span>
+                                <span>986 bai viet</span>
                             </div>
-
                         </div>
-
-
                         <div class="topic-ideas">
-
-                            <img
-                                src="./assets/Tam-&-GiaHuy.png"
-                                alt="Tiếng Anh"
-                            >
-
+                            <img src="/frontend/assets/Tam-&-GiaHuy.png" alt="frog.jpg">
                             <div class="info">
-                                <span class="main-info">Anh</span>
-                                <span>1.102 bài viết</span>
+                                <span id="main-info">Anh</span>
+                                <span>1.102 bai viet</span>
                             </div>
-
                         </div>
-
-
                         <div class="topic-ideas">
-
-                            <img
-                                src="./assets/Tam-&-GiaHuy.png"
-                                alt="Python"
-                            >
-
+                            <img src="/frontend/assets/Tam-&-GiaHuy.png" alt="frog.jpg">
                             <div class="info">
-                                <span class="main-info">Python</span>
-                                <span>642 bài viết</span>
+                                <span id="main-info">Python</span>
+                                <span>642 bai viet</span>
                             </div>
-
                         </div>
-
-
                         <div class="topic-ideas">
-
-                            <img
-                                src="./assets/Tam-&-GiaHuy.png"
-                                alt="Khoa học"
-                            >
-
+                            <img src="/frontend/assets/Tam-&-GiaHuy.png" alt="frog.jpg">
                             <div class="info">
-                                <span class="main-info">
-                                    Khoa học
-                                </span>
-
-                                <span>798 bài viết</span>
+                                <span id="main-info">Khoa hoc</span>
+                                <span>798 bai viet</span>
                             </div>
-
                         </div>
-
                     </div>
-
                 </section>
-
-
-                <!-- FEATURED POSTS -->
-
                 <section id="some-featured">
-
                     <div class="title">
-
-                        <span>🌟 Bài viết nổi bật</span>
-
-                        <a href="#">
-                            Xem tất cả →
-                        </a>
-
+                        <span>🌟 Bai viet noi bat</span>
+                        <a href="#" id="show-all">Xem tat ca -></a>
                     </div>
-
-
                     <div class="topic">
-
-                        <!-- POST 1 -->
-
-                        <article class="featured">
-
-                            <img
-                                src="./assets/coolest.png"
-                                alt="Phương pháp học Toán"
-                            >
-
+                        <div class="featured">
+                            <img src="/frontend/assets/coolest.png" alt="coolest.png">
                             <div class="info">
-
-                                <span class="subject">
-                                    TOÁN
-                                </span>
-
-                                <span class="featured-title">
-                                    5 phương pháp học Toán hiệu quả
-                                    giúp bạn tiến bộ mỗi ngày
-                                </span>
-
-                                <span>
-                                    Tổng hợp 5 phương pháp học Toán
-                                    khoa học, dễ áp dụng cho mọi học sinh.
-                                </span>
-
+                                <span id="subject">TOAN</span>
+                                <span id="Featured">5 phuong phap hoc toan hieu qua giup ban tien bo moi ngay</span>
+                                <span>Tong hop 5 phuong phap hoc Toan khoa hoc, de ap dung cho moi hoc sinh.</span>
                             </div>
-
-
                             <div class="author-post-acc">
-
                                 <div class="avatar">
-
-                                    <img
-                                        src="./assets/don.png"
-                                        alt="Minh Anh"
-                                    >
-
+                                    <img src="/frontend/assets/don.png" alt="author-post-acc-ava">
                                     <div class="private-information">
-
-                                        <span class="author-name">
-                                            Minh Anh
-                                        </span>
-
-                                        <span>
-                                            2 giờ trước
-                                        </span>
-
+                                        <span id="name">Minh Anh</span>
+                                        <span>2 gio truoc</span>
                                     </div>
-
                                 </div>
-
-
                                 <div class="interactions">
-
                                     <div class="viewers">
-                                        <span>
-                                            👁️ 1.2k lượt xem
-                                        </span>
+                                        <span>👁️‍🗨️ 1.2k luot xem</span>
                                     </div>
-
                                     <div class="saved-post">
-                                        <input
-                                            type="checkbox"
-                                            name="saved_post_1"
-                                            aria-label="Lưu bài viết"
-                                        >
+                                        <input type="checkbox" name="saved_post" id="saved_post">
                                     </div>
-
                                 </div>
-
                             </div>
-
-                        </article>
-
-
-                        <!-- POST 2 -->
-
-                        <article class="featured">
-
-                            <img
-                                src="./assets/coolest.png"
-                                alt="Đây thôn Vĩ Dạ"
-                            >
-
+                        </div>
+                        <div class="featured">
+                            <img src="/frontend/assets/coolest.png" alt="coolest.png">
                             <div class="info">
-
-                                <span class="subject">
-                                    VĂN
-                                </span>
-
-                                <span class="featured-title">
-                                    Cảm nhận bài thơ "Đây thôn Vĩ Dạ"
-                                    của Hàn Mặc Tử
-                                </span>
-
-                                <span>
-                                    Phân tích vẻ đẹp bức tranh thiên nhiên
-                                    và tâm trạng của tác giả trong bài thơ.
-                                </span>
-
+                                <span id="subject">VAN</span>
+                                <span id="Featured">Cam nhan bai tho "Day thon Vi Da" cua Han Mac Tu</span>
+                                <span>Phan tich ve dep buc tranh thien nhien va tam trang cua tac gia trong bai tho.</span>
                             </div>
-
-
                             <div class="author-post-acc">
-
                                 <div class="avatar">
-
-                                    <img
-                                        src="./assets/don.png"
-                                        alt="Khánh Linh"
-                                    >
-
+                                    <img src="/frontend/assets/don.png" alt="author-post-acc-ava">
                                     <div class="private-information">
-
-                                        <span class="author-name">
-                                            Khánh Linh
-                                        </span>
-
-                                        <span>
-                                            1 ngày trước
-                                        </span>
-
+                                        <span id="name">Khanh Linh</span>
+                                        <span>1 ngay truoc</span>
                                     </div>
-
                                 </div>
-
-
                                 <div class="interactions">
-
                                     <div class="viewers">
-                                        <span>
-                                            👁️ 876 lượt xem
-                                        </span>
+                                        <span>👁️‍🗨️ 876 luot xem</span>
                                     </div>
-
                                     <div class="saved-post">
-
-                                        <input
-                                            type="checkbox"
-                                            name="saved_post_2"
-                                            aria-label="Lưu bài viết"
-                                        >
-
+                                        <input type="checkbox" name="saved_post" id="saved_post">
                                     </div>
-
                                 </div>
-
                             </div>
-
-                        </article>
-
-
-                        <!-- POST 3 -->
-
-                        <article class="featured">
-
-                            <img
-                                src="./assets/coolest.png"
-                                alt="Tiếng Anh giao tiếp"
-                            >
-
+                        </div>
+                        <div class="featured">
+                            <img src="/frontend/assets/coolest.png" alt="coolest.png">
                             <div class="info">
-
-                                <span class="subject">
-                                    ANH
-                                </span>
-
-                                <span class="featured-title">
-                                    15 cụm từ tiếng Anh giao tiếp
-                                    thông dụng hằng ngày
-                                </span>
-
-                                <span>
-                                    Bỏ túi 15 cụm từ tiếng Anh giúp bạn
-                                    tự tin hơn khi giao tiếp tiếng Anh.
-                                </span>
-
+                                <span id="subject">ANH</span>
+                                <span id="Featured">15 cum tu tieng anh giao tiep thong dung hang ngay </span>
+                                <span>Bo tui 15 cum tu tieng anh giup ban tu tin hon khi giao tiep tieng Anh.</span>
                             </div>
-
-
                             <div class="author-post-acc">
-
                                 <div class="avatar">
-
-                                    <img
-                                        src="./assets/don.png"
-                                        alt="Quang Huy"
-                                    >
-
+                                    <img src="/frontend/assets/don.png" alt="author-post-acc-ava">
                                     <div class="private-information">
-
-                                        <span class="author-name">
-                                            Quang Huy
-                                        </span>
-
-                                        <span>
-                                            2 ngày trước
-                                        </span>
-
+                                        <span id="name">Quang Huy</span>
+                                        <span>2 ngay truoc</span>
                                     </div>
-
                                 </div>
-
-
                                 <div class="interactions">
-
                                     <div class="viewers">
-                                        <span>
-                                            👁️ 1.5k lượt xem
-                                        </span>
+                                        <span>👁️‍🗨️ 1.5k luot xem</span>
                                     </div>
-
                                     <div class="saved-post">
-
-                                        <input
-                                            type="checkbox"
-                                            name="saved_post_3"
-                                            aria-label="Lưu bài viết"
-                                        >
-
+                                        <input type="checkbox" name="saved_post" id="saved_post">
                                     </div>
-
                                 </div>
-
                             </div>
-
-                        </article>
-
                     </div>
-
                 </section>
-
             </div>
-
-
-            <!-- ===================== -->
-            <!-- RIGHT -->
-            <!-- ===================== -->
-
-            <aside class="right">
-
-                <!-- SCHEDULE -->
-
+            <div class="right">
                 <section id="schedule">
-
                     <div class="group">
-
                         <div class="title">
-                            <span>📆 Lịch học</span>
+                            <span>📆 Lich hoc</span>
                         </div>
-
                         <div class="addition">
-                            <a href="#">
-                                Xem thêm →
-                            </a>
+                            <a href="">Xem them -></a>
                         </div>
-
                     </div>
-
-
                     <div class="calendar">
-
-                        <table>
-
-                            <thead>
-
-                                <tr>
-
-                                    <th colspan="3">
-
-                                        <button
-                                            type="button"
-                                            aria-label="Ngày trước"
-                                        >
-                                            ←
-                                        </button>
-
-                                        <span>
-                                            Thứ 4, 20/10/2026
-                                        </span>
-
-                                        <button
-                                            type="button"
-                                            aria-label="Ngày tiếp theo"
-                                        >
-                                            →
-                                        </button>
-
-                                    </th>
-
-                                </tr>
-
-                            </thead>
-
-
-                            <tbody>
-
-                                <tr>
-                                    <td>7:30</td>
-
-                                    <td>
-                                        Toán học
-                                        <br>
-                                        Phòng 203
-                                    </td>
-
-                                    <td>
-                                        Sắp diễn ra
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td>9:30</td>
-
-                                    <td>
-                                        Tiếng Anh
-                                        <br>
-                                        Phòng 105
-                                    </td>
-
-                                    <td>
-                                        Sắp diễn ra
-                                    </td>
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-
-
+                        <div class="date-month-year">
+                            <button type="button"> <- </button>
+                            <span>Thu tu, 22/08/2026</span>
+                            <button type="button"> -> </button>
+                        </div>
+                        <div class="all-room">
+                            <div class="room">
+                                <div class="time">
+                                    <span>07:30 </span>
+                                </div>
+                                <div class="right-table">
+                                    <div class="subject">
+                                        <span>Toan hoc</span>
+                                        <span id="classroom">phong 201</span>
+                                    </div>
+                                    <div class="status">
+                                        <span id="after">Da dien ra</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <div class="time">
+                                    <span>09:15 </span>
+                                </div>
+                                <div class="right-table">
+                                    <div class="subject">
+                                        <span>Ngu van</span>
+                                        <span id="classroom">phong 105</span>
+                                    </div>
+                                    <div class="status">
+                                        <span id="ongoing">Dang hoc</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <div class="time">
+                                    <span>11:00</span>
+                                </div>
+                                <div class="right-table">
+                                    <div class="subject">
+                                        <span>Tieng Anh</span>
+                                        <span id="classroom">phong 301</span>
+                                    </div>
+                                    <div class="status">
+                                        <span id="before">Sap dien ra</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <div class="time">
+                                    <span>13:30</span>
+                                </div>
+                                <div class="right-table">
+                                    <div class="subject">
+                                        <span>Vat ly</span>
+                                        <span id="classroom">phong 203</span>
+                                    </div>
+                                    <div class="status">
+                                        <span id="before">Sap dien ra</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="show-all">
-
-                            <button type="button">
-                                Xem thời khóa biểu đầy đủ
-                            </button>
-
+                            <button type="button">Xem thoi khoa bieu day du</button>
                         </div>
-
                     </div>
-
                 </section>
-
-
-                <!-- SAVED POSTS -->
-
                 <section id="saved">
-
                     <div class="title">
-
-                        <span>
-                            📌 Bài viết đã lưu
-                        </span>
-
-                        <a href="#">
-                            Xem tất cả →
-                        </a>
-
+                        <span>📌 Bai viet da luu</span>
                     </div>
-
-
-                    <div class="list-of-saved-post">
-
-                        <div class="saved_post">
-
-                            <img
-                                src="./assets/DON-CUTE.jpg"
-                                alt="Công thức lượng giác"
-                            >
-
-                            <div class="topic-saved">
-
-                                <span class="main-ideas">
-                                    Công thức lượng giác cần nhớ
-                                    cho lớp 9, 10, 11, 12
-                                </span>
-
-                                <span>
-                                    Toán học
-                                </span>
-
-                            </div>
-
-
-                            <div class="saved-post">
-
-                                <input
-                                    type="checkbox"
-                                    name="saved_item_1"
-                                    checked
-                                    aria-label="Bỏ lưu bài viết"
-                                >
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="saved_post">
-
-                            <img
-                                src="./assets/DON-CUTE.jpg"
-                                alt="Phân tích Chí Phèo"
-                            >
-
-                            <div class="topic-saved">
-
-                                <span class="main-ideas">
-                                    Phân tích nhân vật Chí Phèo
-                                    của Nam Cao
-                                </span>
-
-                                <span>
-                                    Ngữ văn
-                                </span>
-
-                            </div>
-
-
-                            <div class="saved-post">
-
-                                <input
-                                    type="checkbox"
-                                    name="saved_item_2"
-                                    checked
-                                    aria-label="Bỏ lưu bài viết"
-                                >
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="saved_post">
-
-                            <img
-                                src="./assets/DON-CUTE.jpg"
-                                alt="Các thì tiếng Anh"
-                            >
-
-                            <div class="topic-saved">
-
-                                <span class="main-ideas">
-                                    Các thì trong Tiếng Anh đầy đủ
-                                    nhất kèm ví dụ
-                                </span>
-
-                                <span>
-                                    Tiếng Anh
-                                </span>
-
-                            </div>
-
-
-                            <div class="saved-post">
-
-                                <input
-                                    type="checkbox"
-                                    name="saved_item_3"
-                                    checked
-                                    aria-label="Bỏ lưu bài viết"
-                                >
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <!-- RECENT ACTIVITY -->
-
-                <section id="active">
-
-                    <div class="title">
-                        <span>
-                            ⚡ Hoạt động gần đây
-                        </span>
-                    </div>
-
                     <div class="show-all">
-                        <a href="#">
-                            Xem tất cả →
-                        </a>
+                        <a href="">Xem tat ca -></a>
                     </div>
-
-
-                    <div class="activity-at-the-moment">
-
-                        <div class="activities-acc">
-
-                            <img
-                                src="./assets/don.png"
-                                alt="Khánh Linh"
-                            >
-
-                            <div class="main-info-acc">
-
-                                <span>
-                                    <span class="name-acc">
-                                        Khánh Linh
-                                    </span>
-                                    đã bình luận bài viết
-                                </span>
-
-                                <a href="#">
-                                    Cảm nhận bài thơ "Đây thôn Vĩ Dạ"
-                                </a>
-
-                                <span class="after-time">
-                                    10 phút trước
-                                </span>
-
+                    <div class="list-of-saved-post">
+                        <div class="saved_post">
+                            <img src="./assets/DON-CUTE.jpg" alt="subject-images">
+                            <div class="topic-saved">
+                                <span id="main-ideas">Cong thuc luong giac can nho cho 9, 10, 11, 12</span>
+                                <span>Toan hoc</span>
                             </div>
-
-                        </div>
-
-
-                        <div class="activities-acc">
-
-                            <img
-                                src="./assets/don.png"
-                                alt="Quang Huy"
-                            >
-
-                            <div class="main-info-acc">
-
-                                <span>
-                                    <span class="name-acc">
-                                        Quang Huy
-                                    </span>
-                                    đã lưu bài viết
-                                </span>
-
-                                <a href="#">
-                                    15 cụm từ Tiếng Anh giao tiếp thông dụng
-                                </a>
-
-                                <span class="after-time">
-                                    1 giờ trước
-                                </span>
-
+                            <div class="saved-post">
+                                <input type="checkbox" name="saved_post" id="saved_post">
                             </div>
-
                         </div>
-
-
-                        <div class="activities-acc">
-
-                            <img
-                                src="./assets/don.png"
-                                alt="Gia Huy"
-                            >
-
-                            <div class="main-info-acc">
-
-                                <span>
-                                    <span class="name-acc">
-                                        Gia Huy
-                                    </span>
-                                    đã đăng bài viết mới
-                                </span>
-
-                                <a href="#">
-                                    5 phương pháp học Toán hiệu quả
-                                </a>
-
-                                <span class="after-time">
-                                    2 giờ trước
-                                </span>
-
+                        <div class="saved_post">
+                            <img src="./assets/DON-CUTE.jpg" alt="subject-images">
+                            <div class="topic-saved">
+                                <span id="main-ideas">Phan tich nhan vat Chi Pheo cua Nam Cao</span>
+                                <span>Ngu van</span>
                             </div>
-
+                            <div class="saved-post">
+                                <input type="checkbox" name="saved_post" id="saved_post">
+                            </div>
                         </div>
-
+                        <div class="saved_post">
+                            <img src="./assets/DON-CUTE.jpg" alt="subject-images">
+                            <div class="topic-saved">
+                                <span id="main-ideas">Cac thi trong Tieng Anh day du nhat kem vi du</span>
+                                <span>Tieng Anh</span>
+                            </div>
+                            <div class="saved-post">
+                                <input type="checkbox" name="saved_post" id="saved_post">
+                            </div>
+                        </div>
                     </div>
-
                 </section>
-
-            </aside>
-
+                <section id="active">
+                    <div class="title">
+                        <span>⚡ Hoat dong gan day</span>
+                    </div>
+                    <div class="show-all">
+                        <a href="">Xem tat ca -></a>
+                    </div>
+                    <div class="activity-at-the-moment">
+                        <div class="activities-acc">
+                            <img src="./assets/don.png" alt="ava-acc">
+                            <div class="main-info-acc">
+                                <span><span id="name-acc">Khanh Linh </span>da binh luan bai viet</span>
+                                <a href="">Cam nhan bai tho "Day thon Vi Da"</a>
+                                <span id="after-time">10 phut truoc</span>
+                            </div>
+                        </div>
+                        <div class="activities-acc">
+                            <img src="./assets/don.png" alt="ava-acc">
+                            <div class="main-info-acc">
+                                <span><span id="name-acc">Quang Huy </span>da luu bai viet</span>
+                                <a href="">15 cum tu Tieng Anh giao tiep thong dung</a>
+                                <span id="after-time">1 gio truoc</span>
+                            </div>
+                        </div>
+                        <div class="activities-acc">
+                            <img src="./assets/don.png" alt="ava-acc">
+                            <div class="main-info-acc">
+                                <span><span id="name-acc">Gia Huy </span>da dang bai viet moi</span>
+                                <a href="">5 phuong phap hoc toan hieu qua</a>
+                                <span id="after-time">2 gio truoc</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-
     </main>
-
-
-    <!-- ===================== -->
-    <!-- FOOTER -->
-    <!-- ===================== -->
-
+    <script src="index.js"></script>
     <footer>
-        <p>
-            © 2026 Trang học tập của Huy
-        </p>
+        <p>© 2026 Trang hoc tap của Huy</p>
     </footer>
 
-
     <script src="index.js"></script>
-
 </body>
-
 </html>

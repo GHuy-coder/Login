@@ -1,699 +1,234 @@
-/* =========================
-   RESET
-========================= */
-
 * {
-    box-sizing: border-box;
-}
-
-html {
     font-size: 14px;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #222;
-    background-color: #f7f7f7;
-}
-
-img {
-    display: block;
-    object-fit: cover;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-button,
-input {
-    font: inherit;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    display: flex;
-    align-items: center;
+header{
+    display: flex;  
     justify-content: space-between;
-    gap: 2rem;
-
-    padding: 1rem 2rem;
-
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    border-bottom: solid gray 1px;
 }
 
-.logo img {
-    height: 5rem;
-    border-radius: 8px;
-}
-
-.menu nav {
+.menu{
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    padding-top: 1rem;
 }
 
-.menu a {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+.menu a{
+    font-size: 1.8rem;
 
-.menu a:hover {
-    opacity: 0.7;
 }
-
-.important {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.search-history input {
-    width: 25rem;
+.search-history input{
+    width: 30rem;
     height: 3rem;
-
-    padding: 0 1rem;
-
-    border: 1px solid #ccc;
-    border-radius: 8px;
+}
+.notification span{
+    font-size: 3rem;
+}
+.search-history{
+    padding-top: 10px;
 }
 
-.notification span {
-    font-size: 2rem;
-}
-
-.ur-acc {
+.ur-acc{
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    padding-bottom: 10px;
 }
 
-.ur-acc img {
-    width: 4rem;
-    height: 4rem;
-
-    border-radius: 50%;
-}
-
-.information {
+.information{
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    padding-top: 10px;
 }
 
-.information span {
-    font-size: 1rem;
+.ur-acc img{
+    width: 5rem;
+    height: 5rem;
+}
+.information span{
+    font-size: 1.5rem;
 }
 
-#name {
+#name{
     font-weight: bold;
 }
 
-
-/* =========================
-   MAIN LAYOUT
-========================= */
-
-main {
-    margin: 2rem;
-}
-
-.box {
+.important{
     display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
-.left {
-    width: 70%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.title span{
+    font-size: 1.5rem;
 }
 
-.right {
-    width: 30%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-section {
-    background-color: white;
-    border-radius: 12px;
-}
-
-
-/* =========================
-   COMMON TITLE
-========================= */
-
-.title span {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-section#some-featured .title,
-section#saved .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-section .title a {
-    font-size: 1rem;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-#theme {
-    min-height: 300px;
-
-    padding: 2rem;
-
-    display: flex;
-    align-items: center;
-
-    background-image: url("/frontend/assets/cute.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.knowledge-everyday {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    max-width: 60%;
-}
-
-.main-topic {
+.main-topic{
     display: flex;
     flex-direction: column;
 }
-
-.main-topic span {
+.main-topic span{
     font-size: 3rem;
     font-weight: bold;
 }
 
-.write {
-    max-width: 500px;
+.write span{
+    font-size: 1.4rem;
+
+}
+.write{
+    width: 25%;
 }
 
-.write span {
-    font-size: 1.2rem;
-    line-height: 1.5;
+.ur-action button{
+    width: 15rem;
+    height: 3rem;
+}
+.ur-action span{
+    font-size: 1.4rem;
 }
 
-.ur-action {
+#theme{
+    background-image: url("/frontend/assets/cute.jpg");
+    background-repeat: no-repeat;
+    background-size: 70vw 100vh;
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    justify-content: start;
+    padding: 15px;
 }
 
-.ur-action button {
-    min-width: 12rem;
-    min-height: 3rem;
-
-    padding: 0.75rem 1rem;
-
-    border: none;
-    border-radius: 10px;
-
-    cursor: pointer;
-}
-
-
-/* =========================
-   TOPIC
-========================= */
-
-section#Topic {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    padding: 1.5rem;
-}
-
-.topic {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.topic-ideas {
-    flex: 1 1 150px;
-
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    padding: 1rem;
-
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-
-    background-color: white;
-}
-
-.topic-ideas img {
+.topic-ideas img{
     width: 5rem;
     height: 5rem;
-
-    border-radius: 10px;
 }
+.topic-ideas{
+    display: flex;
+    padding: 10px;
+    padding-right: 30px;
+    border: solid gray 1px;
 
-.info {
+}
+.info{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.info span{
+    font-size: 1.5rem;
 }
 
-.info span {
-    font-size: 1rem;
-}
-
-#main-info {
-    font-size: 1.2rem;
+#main-info{
     font-weight: bold;
 }
-
-
-/* =========================
-   FEATURED POSTS
-========================= */
-
-#some-featured {
-    padding: 1.5rem;
-}
-
-#some-featured > .topic {
-    margin-top: 1rem;
-}
-
-.featured {
-    flex: 1 1 250px;
-
+.topic{
     display: flex;
-    flex-direction: column;
-
-    overflow: hidden;
-
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-
-    background-color: white;
+    gap: 2.25rem;
 }
 
-.featured > img {
-    width: 100%;
-    height: 12rem;
-
-    object-fit: cover;
+.featured img{
+    width: 30rem;
+    height: 10rem;
 }
 
-.featured .info {
-    padding: 1rem;
-}
-
-#subject {
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-#Featured {
+#subject{
     font-size: 1.3rem;
     font-weight: bold;
-    line-height: 1.4;
+
 }
 
-.author-post-acc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 1rem;
-
-    margin-top: auto;
-    padding: 1rem;
-
-    border-top: 1px solid #eee;
+#Featured{
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 
-.avatar {
-    display: flex;
-    align-items: center;
-}
-
-.author-post-acc img {
+.author-post-acc img{
     width: 3rem;
     height: 3rem;
-
-    border-radius: 50%;
 }
 
-.private-information {
+.interactions{
     display: flex;
-    flex-direction: column;
-
-    padding-left: 0.75rem;
 }
-
-.interactions {
+.avatar{
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
-
-/* =========================
-   SCHEDULE
-========================= */
-
-#schedule {
-    padding: 1.5rem;
-}
-
-.group {
+.author-post-acc{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 1rem;
-}
-
-.addition a {
-    font-size: 1rem;
-}
-
-.calendar {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px ;
+    padding-top: 10px;
+}
+.private-information {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.calendar table {
-    width: 100%;
 
-    border-collapse: collapse;
+.featured{
+    display: flex;
+    flex-direction: column;
 }
 
-.calendar th,
-.calendar td {
-    padding: 0.75rem;
-
-    border: 1px solid #ddd;
-
-    text-align: left;
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
-
-.calendar th {
-    text-align: center;
-}
-
-.calendar table tr td:nth-child(1) {
-    width: 20%;
-}
-
-.calendar table tr td:nth-child(2) {
-    width: 50%;
-}
-
-.calendar table tr td:nth-child(3) {
+.right{
+    display: flex;
+    flex-direction: column;
     width: 30%;
 }
-
-.calendar th button {
-    margin: 0 1rem;
+.box{
+    display: flex;
 }
 
-.show-all {
-    text-align: center;
+.addition a{
+    font-size: 1.2rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
 }
 
-.show-all button {
-    width: 100%;
-
-    padding: 0.75rem;
-
-    border: none;
-    border-radius: 8px;
-
-    cursor: pointer;
+.list-of-saved-post img{
+    width: 10rem;
+    height: 6rem;
 }
 
-
-/* =========================
-   SAVED POSTS
-========================= */
-
-#saved {
-    padding: 1.5rem;
-}
-
-.list-of-saved-post {
+.calendar{
     display: flex;
     flex-direction: column;
-
-    margin-top: 1rem;
-
-    overflow: hidden;
-
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-}
-
-.list-of-saved-post .saved_post {
-    display: flex;
     align-items: center;
-    gap: 1rem;
-
-    padding: 1rem;
-
-    border-bottom: 1px solid #eee;
 }
 
-.list-of-saved-post .saved_post:last-child {
-    border-bottom: none;
-}
-
-.list-of-saved-post img {
-    width: 6rem;
-    height: 4rem;
-
-    border-radius: 8px;
-}
-
-.topic-saved {
-    flex: 1;
-
+.all-room{
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+    border-top: solid black 1px; 
 }
-
-#main-ideas {
-    font-weight: bold;
-}
-
-
-/* =========================
-   RECENT ACTIVITY
-========================= */
-
-#active {
-    padding: 1.5rem;
-}
-
-#active > .title {
+.room{
     display: flex;
     justify-content: space-between;
+    border-bottom: solid black 1px;
 }
 
-.activity-at-the-moment {
+.subject{
     display: flex;
     flex-direction: column;
-
-    margin-top: 1rem;
 }
 
-.activities-acc {
+.right-table{
     display: flex;
-    gap: 1rem;
-
-    padding: 1rem 0;
-
-    border-bottom: 1px solid #eee;
-}
-
-.activities-acc:last-child {
-    border-bottom: none;
-}
-
-.activities-acc img {
-    width: 3rem;
-    height: 3rem;
-
-    border-radius: 50%;
-}
-
-.main-info-acc {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-#name-acc {
-    font-weight: bold;
-}
-
-#after-time {
-    font-size: 0.85rem;
-    color: #777;
-}
-
-
-/* =========================
-   OTHER TABLE / ROOM
-========================= */
-
-.all-room {
-    display: flex;
-    flex-direction: column;
-
-    border: 1px solid #ddd;
-}
-
-.room {
-    display: flex;
+    gap: 10rem;
     justify-content: space-between;
-
-    border-bottom: 1px solid #ddd;
+    border-left: solid black 1px;
+    padding: 10px;
 }
-
-.room:last-child {
-    border-bottom: none;
-}
-
-.subject {
-    display: flex;
-    flex-direction: column;
-}
-
-.right-table {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-
-    padding: 1rem;
-
-    border-left: 1px solid #ddd;
-}
-
-.time {
-    padding: 1rem;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    margin-top: 2rem;
-    padding: 1.5rem;
-
-    text-align: center;
-
-    border-top: 1px solid #ddd;
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 1100px) {
-
-    header {
-        flex-wrap: wrap;
-    }
-
-    .search-history input {
-        width: 20rem;
-    }
-
-    .box {
-        flex-direction: column;
-    }
-
-    .left,
-    .right {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-    main {
-        margin: 1rem;
-    }
-
-    header {
-        padding: 1rem;
-    }
-
-    .menu nav {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .important {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .search-history {
-        flex: 1;
-    }
-
-    .search-history input {
-        width: 100%;
-    }
-
-    .knowledge-everyday {
-        max-width: 100%;
-    }
-
-    .main-topic span {
-        font-size: 2rem;
-    }
-
-    #theme {
-        min-height: 250px;
-    }
-
-    .topic {
-        flex-direction: column;
-    }
-
-    .featured {
-        width: 100%;
-    }
+.time{
+    padding: 10px;
 }
