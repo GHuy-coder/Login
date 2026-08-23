@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Blog Học Sinh — Bài viết</title>
+
+    <link rel="stylesheet" href="articles.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <!-- LOGO -->
+
+        <a
+            href="/frontend/home/index.html"
+            class="logo"
+            aria-label="Blog Học Sinh"
+        >
+
+            <img
+                src="/frontend/assets/logo.jpg"
+                alt="Blog Học Sinh"
+            >
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+            class="main-nav"
+            aria-label="Điều hướng chính"
+        >
+
+            <a
+                href="/frontend/home/index.html"
+            >
+                🏠
+                <span>Trang chủ</span>
+            </a>
+
+
+            <a
+                href="/frontend/bai-viet/articles.html"
+                class="active"
+                aria-current="page"
+            >
+                📄
+                <span>Bài viết</span>
+            </a>
+
+
+            <a href="#">
+                🧠
+                <span>Chủ đề</span>
+            </a>
+
+
+            <a href="#">
+                📝
+                <span>Bài tập</span>
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER RIGHT -->
+
+        <div class="header-right">
+
+
+            <!-- SEARCH -->
+
+            <div class="header-search">
+
+                <input
+                    type="search"
+                    id="header-search"
+                    name="header-search"
+                    placeholder="Tìm kiếm bài viết, chủ đề..."
+                    aria-label="Tìm kiếm"
+                >
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+            </div>
+
+
+            <!-- NOTIFICATION -->
+
+            <button
+                type="button"
+                class="notification"
+                aria-label="Thông báo"
+            >
+
+                <span class="notification-icon">
+                    🔔
+                </span>
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </button>
+
+
+            <!-- USER -->
+
+            <button
+                type="button"
+                class="user-account"
+                aria-label="Tài khoản"
+            >
+
+                <img
+                    src="/frontend/assets/DON-CUTE.jpg"
+                    alt="Gia Huy"
+                >
+
+                <span class="user-text">
+
+                    <strong>
+                        Chào, Gia Huy
+                    </strong>
+
+                    <small>
+                        Lớp 10A1
+                    </small>
+
+                </span>
+
+                <span class="user-arrow">
+                    ▼
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="page-container">
+
+
+        <!-- =================================================
+             FILTER SIDEBAR
+             ================================================= -->
+
+        <aside class="filter-sidebar">
+
+
+            <!-- FILTER HEADER -->
+
+            <div class="filter-heading">
+
+                <div class="filter-title">
+                    <span>⚙</span>
+                    <strong>Bộ lọc</strong>
+                </div>
+
+                <button
+                    type="button"
+                    class="filter-settings"
+                    aria-label="Cài đặt bộ lọc"
+                >
+                    ⚱
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TOPIC
+                 ================================================= -->
+
+            <section class="filter-section">
+
+                <h3>
+                    Chủ đề
+                </h3>
+
+
+                <label class="filter-item">
+
+                    <input
+                        type="checkbox"
+                        name="topic"
+                        value="toan"
+                    >
+
+                    <span class="topic-symbol math">
+                        ▦
+                    </span>
+
+                    <span class="filter-name">
+                        Toán học
+                    </span>
+
+                    <span class="filter-number">
+                        1.248
+                    </span>
+
+                </label>
+
+
+                <label class="filter-item">
+
+                    <input
+                        type="checkbox"
+                        name="topic"
+                        value="van"
+                    >
+
+                    <span class="topic-symbol literature">
+                        ◧
+                    </span>
+
+                    <span class="filter-name">
+                        Ngữ văn
+                    </span>
+
+                    <span class="filter-number">
+                        986
+                    </span>
+
+                </label>
+
+
+                <label class="filter-item">
+
+                    <input
+                        type="checkbox"
+                        name="topic"
+                        value="anh"
+                    >
+
+                    <span class="topic-symbol english">
+                        Aa
+                    </span>
+
+                    <span class="filter-name">
+                        Tiếng Anh
+                    </span>
+
+                    <span class="filter-number">
+                        1.102
+                    </span>
+
+                </label>
+
+
+                <label class="filter-item">
+
+                    <input
+                        type="checkbox"
+                        name="topic"
+                        value="python"
+                    >
+
+                    <span class="topic-symbol python">
+                        🐍
+                    </span>
+
+                    <span class="filter-name">
+                        Python
+                    </span>
+
+                    <span class="filter-number">
+                        642
+                    </span>
+
+                </label>
+
+
+                <label class="filter-item">
+
+                    <input
+                        type="checkbox"
+                        name="topic"
+                        value="khoa-hoc"
+                    >
+
+                    <span class="topic-symbol science">
+                        ⚗
+                    </span>
+
+                    <span class="filter-name">
+                        Khoa học tự nhiên
+                    </span>
+
+                    <span class="filter-number">
+                        798
+                    </span>
+
+                </label>
+
+
+                <a
+                    href="#"
+                    class="show-all-topics"
+                >
+                    Xem tất cả chủ đề
+                    <span>→</span>
+                </a>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 GRADE
+                 ================================================= -->
+
+            <section class="filter-section">
+
+                <h3>
+                    Khối lớp
+                </h3>
+
+
+                <label class="simple-filter">
+
+                    <input
+                        type="checkbox"
+                        name="grade"
+                        value="6-9"
+                    >
+
+                    <span>
+                        Lớp 6 - 7 - 8 - 9
+                    </span>
+
+                    <strong>
+                        1.956
+                    </strong>
+
+                </label>
+
+
+                <label class="simple-filter">
+
+                    <input
+                        type="checkbox"
+                        name="grade"
+                        value="10-12"
+                    >
+
+                    <span>
+                        Lớp 10 - 11 - 12
+                    </span>
+
+                    <strong>
+                        1.842
+                    </strong>
+
+                </label>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 READING TIME
+                 ================================================= -->
+
+            <section class="filter-section">
+
+                <h3>
+                    Thời lượng đọc
+                </h3>
+
+
+                <label class="simple-filter">
+
+                    <input
+                        type="checkbox"
+                        name="reading-time"
+                        value="under-5"
+                    >
+
+                    <span>
+                        Dưới 5 phút
+                    </span>
+
+                    <strong>
+                        1.125
+                    </strong>
+
+                </label>
+
+
+                <label class="simple-filter">
+
+                    <input
+                        type="checkbox"
+                        name="reading-time"
+                        value="5-15"
+                    >
+
+                    <span>
+                        5 - 15 phút
+                    </span>
+
+                    <strong>
+                        1.684
+                    </strong>
+
+                </label>
+
+
+                <label class="simple-filter">
+
+                    <input
+                        type="checkbox"
+                        name="reading-time"
+                        value="over-15"
+                    >
+
+                    <span>
+                        Trên 15 phút
+                    </span>
+
+                    <strong>
+                        989
+                    </strong>
+
+                </label>
+
+            </section>
+
+
+
+            <!-- CLEAR -->
+
+            <button
+                type="button"
+                class="clear-filters"
+            >
+
+                <span>
+                    Xóa bộ lọc
+                </span>
+
+                <span>
+                    ↻
+                </span>
+
+            </button>
+
+        </aside>
+
+
+
+        <!-- =====================================================
+             CONTENT
+             ===================================================== -->
+
+        <section class="articles-area">
+
+
+            <!-- =================================================
+                 PAGE HEADER
+                 ================================================= -->
+
+            <div class="articles-heading">
+
+                <div>
+
+                    <h1>
+                        Khám phá bài viết
+                    </h1>
+
+                    <p>
+                        Đọc, học hỏi và phát triển bản thân
+                        mỗi ngày cùng cộng đồng Blog Học Sinh!
+                    </p>
+
+                </div>
+
+
+                <!-- DECORATION -->
+
+                <div class="heading-decoration">
+
+                    <span>
+                        ✦
+                    </span>
+
+                    <span>
+                        📖
+                    </span>
+
+                    <span>
+                        🌱
+                    </span>
+
+                    <span>
+                        💡
+                    </span>
+
+                    <span>
+                        ✈
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SEARCH + SORT
+                 ================================================= -->
+
+            <div class="content-toolbar">
+
+
+                <div class="article-search">
+
+                    <input
+                        type="search"
+                        id="article-search"
+                        name="article-search"
+                        placeholder="Tìm kiếm bài viết theo tiêu đề, nội dung, tác giả..."
+                        aria-label="Tìm kiếm bài viết"
+                    >
+
+                    <button
+                        type="button"
+                        aria-label="Tìm kiếm"
+                    >
+                        🔍
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="toolbar-select"
+                >
+
+                    <span>
+                        Sắp xếp:
+                    </span>
+
+                    <strong>
+                        Mới nhất
+                    </strong>
+
+                    <span>
+                        ▼
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="toolbar-select"
+                >
+
+                    <span>
+                        Hiển thị:
+                    </span>
+
+                    <strong>
+                        12 bài viết
+                    </strong>
+
+                    <span>
+                        ▼
+                    </span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TOPIC CARDS
+                 ================================================= -->
+
+            <div class="topic-row">
+
+
+                <a
+                    href="#"
+                    class="topic-card math"
+                >
+
+                    <span class="topic-card-icon">
+                        ▦
+                    </span>
+
+                    <span class="topic-card-info">
+
+                        <strong>
+                            Toán
+                        </strong>
+
+                        <small>
+                            1.248 bài viết
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="topic-card literature"
+                >
+
+                    <span class="topic-card-icon">
+                        ◧
+                    </span>
+
+                    <span class="topic-card-info">
+
+                        <strong>
+                            Văn
+                        </strong>
+
+                        <small>
+                            986 bài viết
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="topic-card english"
+                >
+
+                    <span class="topic-card-icon">
+                        Aa
+                    </span>
+
+                    <span class="topic-card-info">
+
+                        <strong>
+                            Anh
+                        </strong>
+
+                        <small>
+                            1.102 bài viết
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="topic-card python"
+                >
+
+                    <span class="topic-card-icon">
+                        🐍
+                    </span>
+
+                    <span class="topic-card-info">
+
+                        <strong>
+                            Python
+                        </strong>
+
+                        <small>
+                            642 bài viết
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="topic-card science"
+                >
+
+                    <span class="topic-card-icon">
+                        ⚗
+                    </span>
+
+                    <span class="topic-card-info">
+
+                        <strong>
+                            Khoa học
+                        </strong>
+
+                        <small>
+                            798 bài viết
+                        </small>
+
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="topic-card more"
+                >
+
+                    <span class="topic-card-info">
+
+                        <strong>
+                            Xem tất cả
+                        </strong>
+
+                        <small>
+                            chủ đề
+                        </small>
+
+                    </span>
+
+                    <span class="topic-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 QUICK FILTER
+                 ================================================= -->
+
+            <div class="quick-filter">
+
+                <strong>
+                    Bộ lọc nhanh:
+                </strong>
+
+
+                <a
+                    href="#"
+                    class="quick-filter-item active"
+                >
+                    Mới nhất
+                </a>
+
+
+                <a
+                    href="#"
+                    class="quick-filter-item"
+                >
+                    Phổ biến
+                </a>
+
+
+                <a
+                    href="#"
+                    class="quick-filter-item"
+                >
+                    Lớp 6 - 9
+                </a>
+
+
+                <a
+                    href="#"
+                    class="quick-filter-item"
+                >
+                    Lớp 10 - 12
+                </a>
+
+
+                <a
+                    href="#"
+                    class="quick-filter-item"
+                >
+                    Dành cho ôn thi
+                </a>
+
+
+                <a
+                    href="#"
+                    class="quick-filter-item"
+                >
+                    Kỹ năng học tập
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ARTICLE GRID
+                 ================================================= -->
+
+            <div class="article-grid">
+
+
+                <!-- ARTICLE 1 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="5 phương pháp học Toán hiệu quả"
+                        >
+
+                        <span class="category-tag math">
+                            TOÁN
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            5 phương pháp học Toán hiệu quả
+                            giúp bạn tiến bộ mỗi ngày
+                        </h2>
+
+                        <p>
+                            Tổng hợp 5 phương pháp học Toán khoa học,
+                            dễ áp dụng cho mọi học sinh.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Minh Anh"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Minh Anh
+                                </strong>
+
+                                <span>
+                                    2 giờ trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 2 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="Cảm nhận bài thơ Đây thôn Vĩ Dạ"
+                        >
+
+                        <span class="category-tag literature">
+                            VĂN
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            Cảm nhận bài thơ "Đây thôn Vĩ Dạ"
+                            của Hàn Mặc Tử
+                        </h2>
+
+                        <p>
+                            Phân tích vẻ đẹp bức tranh thiên nhiên
+                            và tâm trạng của tác giả trong bài thơ.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Khánh Linh"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Khánh Linh
+                                </strong>
+
+                                <span>
+                                    1 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 3 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="15 cụm từ tiếng Anh giao tiếp"
+                        >
+
+                        <span class="category-tag english">
+                            ANH
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            15 cụm từ tiếng Anh giao tiếp
+                            thông dụng hằng ngày
+                        </h2>
+
+                        <p>
+                            Bỏ túi 15 cụm từ tiếng Anh giúp bạn
+                            tự tin hơn khi giao tiếp tiếng Anh.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Quang Huy"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Quang Huy
+                                </strong>
+
+                                <span>
+                                    2 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 4 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="Làm quen Python"
+                        >
+
+                        <span class="category-tag python">
+                            PYTHON
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            Làm quen Python: In ra dòng
+                            "Hello World!" đầu tiên
+                        </h2>
+
+                        <p>
+                            Hướng dẫn cài đặt và chạy chương trình
+                            Python đơn giản cho người mới bắt đầu.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Minh Anh"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Minh Anh
+                                </strong>
+
+                                <span>
+                                    3 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 5 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="Cấu trúc DNA"
+                        >
+
+                        <span class="category-tag science">
+                            KHOA HỌC
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            Cấu trúc DNA và vai trò
+                            trong di truyền
+                        </h2>
+
+                        <p>
+                            Tìm hiểu cấu trúc xoắn kép của DNA
+                            và ý nghĩa trong sinh học.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Ngọc Hà"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Ngọc Hà
+                                </strong>
+
+                                <span>
+                                    4 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 6 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="Tổng hợp công thức hình học"
+                        >
+
+                        <span class="category-tag math">
+                            TOÁN
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            Tổng hợp công thức hình học
+                            quan trọng
+                        </h2>
+
+                        <p>
+                            Công thức tính diện tích, chu vi các hình
+                            thường gặp trong chương trình.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Quang Huy"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Quang Huy
+                                </strong>
+
+                                <span>
+                                    5 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 7 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="Lặng lẽ Sa Pa"
+                        >
+
+                        <span class="category-tag literature">
+                            VĂN
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            Phân tích truyện ngắn
+                            "Lặng lẽ Sa Pa"
+                        </h2>
+
+                        <p>
+                            Phân tích nhân vật anh thanh niên
+                            và vẻ đẹp của những con người lao động.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Khánh Linh"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Khánh Linh
+                                </strong>
+
+                                <span>
+                                    6 ngày trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARTICLE 8 -->
+
+                <article class="article-card">
+
+                    <div class="article-cover">
+
+                        <img
+                            src="/frontend/assets/coolest.png"
+                            alt="Cấu trúc câu tiếng Anh"
+                        >
+
+                        <span class="category-tag english">
+                            ANH
+                        </span>
+
+                    </div>
+
+
+                    <div class="article-content">
+
+                        <h2>
+                            Cấu trúc câu trong tiếng Anh
+                            cơ bản
+                        </h2>
+
+                        <p>
+                            Tổng hợp các cấu trúc câu cơ bản giúp bạn
+                            xây nền tảng ngữ pháp vững chắc.
+                        </p>
+
+                    </div>
+
+
+                    <div class="article-meta">
+
+                        <div class="author">
+
+                            <img
+                                src="/frontend/assets/don.png"
+                                alt="Minh Anh"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Minh Anh
+                                </strong>
+
+                                <span>
+                                    1 tuần trước
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="save-article"
+                            aria-label="Lưu bài viết"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PAGINATION
+                 ================================================= -->
+
+            <nav
+                class="pagination"
+                aria-label="Phân trang"
+            >
+
+                <a
+                    href="#"
+                    class="page-number arrow"
+                    aria-label="Trang trước"
+                >
+                    ‹
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number active"
+                    aria-current="page"
+                >
+                    1
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    2
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    3
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    4
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    5
+                </a>
+
+
+                <span class="pagination-dots">
+                    ...
+                </span>
+
+
+                <a
+                    href="#"
+                    class="page-number"
+                >
+                    12
+                </a>
+
+
+                <a
+                    href="#"
+                    class="page-number arrow"
+                    aria-label="Trang sau"
+                >
+                    ›
+                </a>
+
+            </nav>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Blog Học Sinh
+        </p>
+
+    </footer>
+
+
+    <script src="articles.js"></script>
+
+</body>
+
+</html>
