@@ -469,7 +469,6 @@ img {
     color: var(--blue);
 }
 
-
 /* SECTION */
 
 .filter-section {
@@ -735,25 +734,6 @@ img {
     font-size: 14px;
 }
 
-.heading-decoration span:nth-child(2) {
-    color: #5885cc;
-    font-size: 32px;
-}
-
-.heading-decoration span:nth-child(3) {
-    color: #68ac7b;
-    font-size: 28px;
-}
-
-.heading-decoration span:nth-child(4) {
-    color: #e7ad4c;
-    font-size: 29px;
-}
-
-.heading-decoration span:nth-child(5) {
-    color: #75a5df;
-    font-size: 30px;
-}
 
 
 /* =========================================================
@@ -1561,5 +1541,374 @@ img {
 
     .quick-filter {
         margin-right: -2px;
+    }
+}
+
+/* =========================================================
+   SCALE-UP OVERRIDES
+   Tuned for large desktop screens to match the reference
+   screenshot more closely.
+   ========================================================= */
+
+@media (min-width: 1251px) {
+
+    .site-header {
+        height: 84px;
+        padding: 0 42px;
+    }
+
+    .logo {
+        width: 255px;
+        flex-basis: 255px;
+    }
+
+    .logo img {
+        width: 205px;
+        height: 56px;
+    }
+
+    .main-nav {
+        gap: 12px;
+    }
+
+    .main-nav a {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .header-right {
+        gap: 19px;
+    }
+
+    .header-search {
+        width: 320px;
+        height: 44px;
+    }
+
+    .header-search input {
+        font-size: 13px;
+    }
+
+    .notification {
+        width: 40px;
+        height: 40px;
+    }
+
+    .notification-icon {
+        font-size: 21px;
+    }
+
+    .user-account {
+        min-width: 180px;
+    }
+
+    .user-account img {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+    }
+
+    .user-text strong {
+        font-size: 13px;
+    }
+
+    .user-text small {
+        font-size: 12px;
+    }
+
+
+    /* MAIN */
+
+    .page-container {
+        width: min(1580px, calc(100% - 70px));
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: 30px;
+        margin: 28px auto 48px;
+    }
+
+
+    /* FILTER */
+
+    .filter-sidebar {
+        top: 110px;
+        padding: 20px 18px 17px;
+        border-radius: 14px;
+    }
+
+    .filter-title strong {
+        font-size: 14px;
+    }
+
+    .filter-section {
+        padding: 17px 0;
+    }
+
+    .filter-section h3 {
+        margin-bottom: 13px;
+        font-size: 13px;
+    }
+
+    .filter-item {
+        min-height: 39px;
+        grid-template-columns: 18px 26px minmax(0, 1fr) auto;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .filter-item input,
+    .simple-filter input {
+        width: 16px;
+        height: 16px;
+    }
+
+    .topic-symbol {
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+    }
+
+    .filter-number,
+    .simple-filter strong {
+        font-size: 11px;
+    }
+
+    .simple-filter {
+        min-height: 39px;
+        grid-template-columns: 18px minmax(0, 1fr) auto;
+        font-size: 12px;
+    }
+
+    .show-all-topics {
+        margin-top: 10px;
+        font-size: 11px;
+    }
+
+    .clear-filters {
+        height: 46px;
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+
+    /* PAGE HEADING */
+
+    .articles-heading {
+        min-height: 94px;
+        margin-bottom: 15px;
+    }
+
+    .articles-heading h1 {
+        font-size: 29px;
+        margin-bottom: 5px;
+    }
+
+    .articles-heading p {
+        font-size: 13px;
+    }
+
+    .heading-decoration {
+        width: 310px;
+        height: 94px;
+    }
+
+    .heading-decoration span {
+        font-size: 29px;
+    }
+
+
+    /* TOOLBAR */
+
+    .content-toolbar {
+        grid-template-columns: minmax(0, 1fr) 205px 195px;
+        gap: 14px;
+        margin-bottom: 16px;
+    }
+
+    .article-search,
+    .toolbar-select {
+        height: 46px;
+    }
+
+    .article-search input {
+        font-size: 12px;
+        padding-left: 17px;
+    }
+
+    .toolbar-select {
+        padding: 0 15px;
+        font-size: 12px;
+    }
+
+
+    /* TOPIC CARDS */
+
+    .topic-row {
+        gap: 12px;
+        margin-bottom: 17px;
+    }
+
+    .topic-card {
+        min-height: 64px;
+        gap: 11px;
+        padding: 11px;
+        border-radius: 10px;
+    }
+
+    .topic-card-icon {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+        font-size: 20px;
+    }
+
+    .topic-card-info strong {
+        font-size: 13px;
+    }
+
+    .topic-card-info small {
+        font-size: 11px;
+    }
+
+    .topic-arrow {
+        font-size: 21px;
+    }
+
+
+    /* QUICK FILTER */
+
+    .quick-filter {
+        min-height: 39px;
+        gap: 9px;
+        margin-bottom: 14px;
+    }
+
+    .quick-filter > strong {
+        font-size: 12px;
+    }
+
+    .quick-filter-item {
+        min-height: 31px;
+        padding: 0 15px;
+        font-size: 11px;
+    }
+
+
+    /* ARTICLE CARDS */
+
+    .article-grid {
+        gap: 18px;
+    }
+
+    .article-cover {
+        height: 126px;
+    }
+
+    .category-tag {
+        left: 9px;
+        bottom: 8px;
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    .article-content {
+        min-height: 128px;
+        padding: 13px 12px 10px;
+    }
+
+    .article-content h2 {
+        margin-bottom: 7px;
+        font-size: 14px;
+        line-height: 1.36;
+    }
+
+    .article-content p {
+        font-size: 10.5px;
+        line-height: 1.5;
+    }
+
+    .article-meta {
+        min-height: 53px;
+        padding: 8px 12px;
+    }
+
+    .author {
+        gap: 8px;
+    }
+
+    .author img {
+        width: 29px;
+        height: 29px;
+        flex-basis: 29px;
+    }
+
+    .author strong {
+        font-size: 10.5px;
+    }
+
+    .author span {
+        font-size: 9.5px;
+    }
+
+    .save-article {
+        width: 29px;
+        height: 29px;
+        font-size: 22px;
+    }
+
+
+    /* PAGINATION */
+
+    .pagination {
+        gap: 8px;
+        margin-top: 27px;
+    }
+
+    .page-number {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        font-size: 12px;
+    }
+
+    .page-number.arrow {
+        font-size: 20px;
+    }
+}
+
+
+/* Extra-large screens: keep the composition spread out instead
+   of looking cramped in the center. */
+
+@media (min-width: 1500px) {
+
+    .page-container {
+        width: min(1650px, calc(100% - 60px));
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .header-search {
+        width: 340px;
+    }
+
+    .logo {
+        width: 270px;
+        flex-basis: 270px;
+    }
+
+    .logo img {
+        width: 215px;
+    }
+
+    .article-grid {
+        gap: 19px;
+    }
+
+    .article-cover {
+        height: 132px;
+    }
+
+    .article-content {
+        min-height: 134px;
     }
 }
