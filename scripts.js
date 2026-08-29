@@ -1,1 +1,1 @@
-window.location.href="frontend/home/index.html"
+window.location.href="frontend/components/home/index.html"
