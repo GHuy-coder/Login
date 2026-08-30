@@ -7,7 +7,7 @@ window.history.replaceState({}, "", "/");
 function checkLogin(){
     const user_storage = localStorage.getItem("users")
     if (!user_storage){
-        window.location.href = "frontend/components/authenticator/login/login.html"
+        window.location.href = "/components/authenticator/login/login.html"
 
     }
 }
