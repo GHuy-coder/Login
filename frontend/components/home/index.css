@@ -309,7 +309,7 @@ img {
     min-height: 0;
 
     background-image:
-        url("/frontend/assets/cute.jpg");
+        url("/assets/cute.jpg");
 
     background-repeat: no-repeat;
 
