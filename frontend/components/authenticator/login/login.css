@@ -1,30 +1,636 @@
+/* =====================================================
+   RESET
+   ===================================================== */
 
-
-.password-remember{
-    display: flex;
-    justify-content: space-between;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.dang-nhap{
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   MAIN PAGE
+   ===================================================== */
+
+.login-page {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+.login-page::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(235, 242, 250, 0.92) 0%,
+        rgba(235, 242, 250, 0.82) 43%,
+        rgba(30, 65, 120, 0.12) 70%,
+        rgba(20, 50, 100, 0.22) 100%
+    );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+   ===================================================== */
+
+.login-introduction {
+    position: relative;
+
+    width: 50%;
+
+    min-height: 100vh;
+
+    padding: 70px 100px;
+
+    z-index: 2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(242, 246, 252, 0.96) 0%,
+            rgba(238, 243, 250, 0.92) 65%,
+            rgba(238, 243, 250, 0.55) 100%
+        );
+
     display: flex;
     flex-direction: column;
+}
+
+.login-side{
+    z-index: 2;
+}
+
+
+
+
+/* =====================================================
+   BRAND
+   ===================================================== */
+
+.brand {
+    position: relative;
+
+    z-index: 3;
+
+    width: fit-content;
+}
+
+
+.brand img {
+    display: block;
+
+    width: 205px;
+    height: auto;
+}
+
+
+/* =====================================================
+   INTRODUCTION CONTENT
+   ===================================================== */
+
+.introduction-content {
+    position: relative;
+
+    z-index: 3;
+
+    margin-top: 80px;
+
+    max-width: 650px;
+}
+
+
+.introduction-content h1 {
+    color: #1f2d45;
+
+    font-size: clamp(54px, 4vw, 82px);
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+.introduction-content h1 span {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #285da8;
+}
+
+.introduction-content h1 span {
+    display: block;
+    white-space: nowrap;
+}
+
+.introduction-content {
+    width: 650px;
+    max-width: calc(100% - 100px);
+}
+
+
+.introduction-content p {
+    margin-top: 28px;
+
+    max-width: 600px;
+
+    color: #405069;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+.study-quote {
+    margin-top: 45px;
+
+    max-width: 380px;
+
+    padding-left: 18px;
+
+    border-left: 3px solid #3d73bb;
+
+    font-size: 14px !important;
+
+    font-style: italic;
+
+    color: #66758c !important;
+}
+
+/* =====================================================
+   DECORATIONS
+   ===================================================== */
+
+.star,
+.plane {
+    position: absolute;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+.star {
+    color: #6d9bd6;
+}
+
+
+.star-1 {
+    top: 33%;
+    left: 68%;
+
+    font-size: 26px;
+}
+
+
+.star-2 {
+    top: 48%;
+    left: 9%;
+
+    font-size: 18px;
+}
+
+
+.star-3 {
+    top: 38%;
+    right: 15%;
+
+    font-size: 15px;
+}
+
+
+.plane {
+    top: 31%;
+    right: 9%;
+
+    color: #3569aa;
+
+    font-size: 42px;
+
+    transform: rotate(-18deg);
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+   ===================================================== */
+
+.login-side {
+    position: relative;
+
+    z-index: 2;
+
+    width: 50%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+}
+
+
+/* =====================================================
+   LOGIN FORM CARD
+   ===================================================== */
+
+.form {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 58px 46px 42px;
+
+    border-radius: 32px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    box-shadow:
+        0 25px 70px rgba(20, 45, 85, 0.22);
+}
+
+
+/* =====================================================
+   FORM HEADER
+   ===================================================== */
+
+.image-form {
     text-align: center;
-    gap: 1.2rem;
-}
-.new-acc{
-    text-align: center;
-}
-.new-acc span{
-    font-size: 1.2rem;
+
+    margin-bottom: 40px;
 }
 
-.new-acc a{
-    font-size: 1.2rem;
+
+.form-logo {
+    width: 190px;
+
+    height: auto;
+
+    margin-bottom: 20px;
 }
 
-.password-remember span{
-    font-size: 1.2rem;
+
+.title h1 {
+    color: #1f2d45;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
 }
 
-.password-remember a{
-    font-size: 1.2rem;
+
+.title span {
+    color: #718096;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #34435a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.input-group input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 17px;
+
+    border-radius: 14px;
+
+    border: 1px solid #d5dce7;
+
+    outline: none;
+
+    background: #f8fafc;
+
+    color: #27364d;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.input-group input:focus {
+    border-color: #2f66b5;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(47, 102, 181, 0.1);
+}
+
+
+/* =====================================================
+   REMEMBER PASSWORD
+   ===================================================== */
+
+.password-remember {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin: 4px 0 26px;
+}
+
+
+.password-remember__remembered {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #65748a;
+
+    font-size: 14px;
+}
+
+
+.password-remember__remembered input {
+    width: 17px;
+    height: 17px;
+
+    accent-color: #2d65b4;
+}
+
+
+.password-remember a {
+    color: #315d9d;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+   ===================================================== */
+
+.classic button {
+    width: 100%;
+
+    height: 56px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    background: linear-gradient(
+        135deg,
+        #3e73bd,
+        #28579d
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.classic button {
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+}
+
+.classic button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(32, 84, 160, 0.35);
+}
+
+.classic button:active {
+    transform: translateY(0);
+}
+
+
+.classic button strong {
+    position: absolute;
+
+    right: 22px;
+
+    font-size: 22px;
+
+    top: 50%;
+
+    transform: translateY(-52%);
+}
+
+
+/* =====================================================
+   DIVIDER
+   ===================================================== */
+
+.ozone {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 22px 0;
+}
+
+
+.ozone hr {
+    flex: 1;
+
+    border: none;
+
+    border-top: 1px solid #dce2ea;
+}
+
+
+.ozone span {
+    color: #8a96a7;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   GOOGLE BUTTON
+   ===================================================== */
+
+.google button {
+
+    width: 100%;
+    height: 54px;
+
+    border-radius: 14px;
+
+    border: 1px solid #d5dce7;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #34435a;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.google button:hover {
+
+    transform: translateY(-3px);
+
+    border-color: #b9c9df;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(32, 84, 160, 0.14);
+
+}
+
+
+.google button:active {
+
+    transform: translateY(0);
+
+    box-shadow:
+        0 5px 15px rgba(32, 84, 160, 0.10);
+
+}
+
+
+.google-icon {
+
+    margin-right: 12px;
+
+    color: #4285f4;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    display: inline-block;
+
+    transition:
+        transform 0.2s ease;
+
+}
+
+
+.google button:hover .google-icon {
+
+    transform: scale(1.12);
+
+}
+
+
+/* =====================================================
+   SIGN UP
+   ===================================================== */
+
+.new-acc {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    margin-top: 24px;
+
+    color: #7b8797;
+
+    font-size: 14px;
+}
+
+
+.new-acc a {
+    color: #315d9d;
+
+    font-weight: 700;
+
+    text-decoration: none;
 }

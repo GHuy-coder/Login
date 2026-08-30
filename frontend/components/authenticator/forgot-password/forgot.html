@@ -1,47 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quên mật khẩu | Blog Học Sinh</title>
+
+    <!-- SHARED AUTHENTICATOR STYLE -->
+    <link
+        rel="stylesheet"
+        href="/frontend/components/authenticator/authenticator.css"
+    >
+
+    <!-- FORGOT PASSWORD STYLE -->
+    <link
+        rel="stylesheet"
+        href="forgot.css"
+    >
+
 </head>
 
-<link rel="stylesheet" href="forgot.css">
-<link rel="stylesheet" href="../authenticator.css">
 
 <body>
-    <form id="Form">
-        <div class="image-form">
-            <div class="form-forgot-logo">
-                <img src="/frontend/assets/logo.jpg" alt="logo.jpg">
-            </div>
-            <div class="title">
-                <h1>Quen mat khau</h1>
-                <span>Nhap email de nhap lien ket dat lai mat khau</span>
-            </div>
+
+
+    <main class="forgot-page">
+
+
+        <!-- =====================================================
+             FULL BACKGROUND IMAGE
+             ===================================================== -->
+
+        <div class="illustration-area">
+
+            <img
+                class="seal-image"
+                src="/frontend/assets/cute.jpg"
+                alt=""
+            >
+
         </div>
-        <div class="email">
-            <span>Email</span>
-            <input type="email" name="user-email" id="your email">
-        </div>
-        <div class="forgot-send">
-            <div class="classic">
-                <button>Dang nhap</button>
+
+
+
+        <!-- =====================================================
+             LEFT SIDE
+             ===================================================== -->
+
+        <section class="forgot-introduction">
+
+
+            <!-- BRAND -->
+
+            <div class="brand">
+
+                <img
+                    src="/frontend/assets/logo.png"
+                    alt="Blog Học Sinh"
+                >
+
             </div>
-            <div class="ozone">
-                <hr>
-                <span>hoac</span>
+
+
+
+            <!-- INTRODUCTION -->
+
+            <div class="introduction-content">
+
+                <h1>
+
+                    Lấy lại
+
+                    <span>
+                        mật khẩu của bạn
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Đừng lo lắng nếu bạn quên mật khẩu.
+                    Chúng tôi sẽ gửi liên kết để giúp bạn
+                    lấy lại quyền truy cập tài khoản.
+
+                </p>
+
+
+                <div class="introduction-quote">
+
+                    <span>
+                        “Một bước nhỏ để quay lại hành trình học tập.”
+                    </span>
+
+                </div>
+
             </div>
-            <div class="go-back">
-                <button id="listen-button" type="button">Quay lai dang nhap</button>
-            </div>
-        </div>
-        <div class="email-check">
-            <span>Vui long kiem tra hop thu den va thu muc Spam neu ban khong nhan duoc email</span>
-        </div>
-    </form>
-</body>
+
+
+
+            <!-- DECORATIONS -->
+
+            <span class="star star-1">
+                ✦
+            </span>
+
+            <span class="star star-2">
+                ✦
+            </span>
+
+            <span class="star star-3">
+                ✦
+            </span>
+
+            <span class="plane">
+                ✈
+            </span>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             RIGHT SIDE
+             ===================================================== -->
+
+        <section class="forgot-side">
+
+
+            <form
+                class="form"
+                id="forgot-form"
+            >
+
+
+                <!-- LOGO + TITLE -->
+
+                <div class="image-form">
+
+
+                    <div class="form-forgot-logo">
+
+                        <img
+                            src="/frontend/assets/logo.png"
+                            alt="Blog Học Sinh"
+                        >
+
+                    </div>
+
+
+                    <div class="title">
+
+                        <h1>
+                            Quên mật khẩu?
+                        </h1>
+
+                        <span>
+                            Nhập email để nhận liên kết đặt lại mật khẩu ✨
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="email input-group">
+
+                    <label for="your-email">
+                        Email
+                    </label>
+
+
+                    <input
+                        type="email"
+                        name="user-email"
+                        id="your-email"
+                        placeholder="Nhập email của bạn"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- SEND BUTTON -->
+
+                <div class="forgot-send">
+
+
+                    <div class="classic">
+
+                        <button type="submit">
+
+                            <span>
+                                Gửi liên kết
+                            </span>
+
+                            <strong>
+                                →
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- DIVIDER -->
+
+                    <div class="ozone">
+
+                        <hr>
+
+                        <span>
+                            hoặc
+                        </span>
+
+                        <hr>
+
+                    </div>
+
+
+
+                    <!-- BACK TO LOGIN -->
+
+                    <div class="go-back">
+
+                        <button
+                            id="listen-button"
+                            type="button"
+                        >
+
+                            <span>
+                                ←
+                            </span>
+
+                            Quay lại đăng nhập
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- EMAIL CHECK NOTICE -->
+
+                <div class="email-check">
+
+                    <span class="email-check-icon">
+                        ✉
+                    </span>
+
+
+                    <p>
+
+                        Vui lòng kiểm tra hộp thư đến và thư mục Spam
+                        nếu bạn không nhận được email.
+
+                    </p>
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
 
     <script src="forgot.js"></script>
-    
+
+
+</body>
+
 </html>

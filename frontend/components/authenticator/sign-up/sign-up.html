@@ -1,67 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Đăng ký | Blog Học Sinh</title>
+
+    <link
+        rel="stylesheet"
+        href="/frontend/components/authenticator/authenticator.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="sign-up.css"
+    >
+
 </head>
 
-<link rel="stylesheet" href="sign-up.css">
-<link rel="stylesheet" href="../authenticator.css">
 
 <body>
-    <form id="Form">
-        <div class="image-form">
-            <div class="logo.icon">
-                <img src="/frontend/assets/logo.jpg" alt="logo.jpg">
+
+    <main class="login-page">
+
+
+        <!-- =====================================================
+             FULL BACKGROUND IMAGE
+             ===================================================== -->
+
+        <div class="illustration-area">
+
+            <img
+                class="seal-image"
+                src="/frontend/assets/cute.jpg"
+                alt=""
+            >
+
+        </div>
+
+
+
+        <!-- =====================================================
+             LEFT SIDE
+             ===================================================== -->
+
+        <section class="login-introduction">
+
+
+            <!-- BRAND -->
+
+            <div class="brand">
+
+                <img
+                    src="/frontend/assets/logo.jpg"
+                    alt="Blog Học Sinh"
+                >
+
             </div>
-            <div class="title">
-                <h1>Dang ky</h1>
-                <span>Tao tai khoan hoc sinh cua ban</span>
+
+
+
+            <!-- INTRODUCTION -->
+
+            <div class="introduction-content">
+
+                <h1>
+
+                    Tham gia
+
+                    <span>
+                        hành trình học tập
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Tạo tài khoản để khám phá kiến thức,
+                    kết nối với bạn bè và bắt đầu hành trình
+                    học tập của riêng bạn.
+
+                </p>
+
+
+                <p class="study-quote">
+
+                    "Mỗi ngày một chút kiến thức,
+                    một bước gần hơn với ước mơ."
+
+                </p>
+
             </div>
-        </div>
-        <div class="name">
-            <span>Ho va ten</span>
-            <input type="text" name="user-name" id="your-name">
-        </div>
-        <div class="email">
-            <span>Email</span>
-            <input type="email" name="user-email" id="your-email">
-        </div>
-        <div class="password">
-            <span>Mat khau</span>
-            <input type="password" name="user-password" id="your-password">
-        </div>
-        <div class="check-password">
-            <span>Mat khau</span>
-            <input type="password" name="checked-user-password" id="checked-your-password">
-        </div>
-        <div class="class">
-            <span>Lop</span>
-            <select name="class" id="class">
-            </select>
-        </div>
-        <div class="accpect-term">
-            <div class="term">
-                <input type="checkbox" name="acc-term" id="acc-term">
-                <span>Toi dong y voi <a href="">Dieu khoang su dung</a> va <a href="">chinh sach bao mat</a></span>
-            </div>
-        </div>
-        <div class="sign-up">
-            <div class="acc-has-been-created">
-                <button>Dang nhap</button>
-            </div>
-            <div class="ozone">
-                <hr>
-                <span>hoac</span>
-            </div>
-            <div class="google">
-                <button>Tiep tuc voi Google</button>
-            </div>
-        </div>
-        <div class="owned-acc">
-            <span>Da ca tai khoan? <a href="../login/login.html">Dang nhap</a></span>
-        </div>
-    </form>
+
+
+
+            <!-- DECORATIONS -->
+
+            <span class="star star-1">✦</span>
+            <span class="star star-2">✦</span>
+            <span class="star star-3">✦</span>
+
+            <span class="plane">✈</span>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             RIGHT SIDE
+             ===================================================== -->
+
+        <section class="login-side">
+
+
+            <form
+                class="form"
+                id="sign-up-form"
+            >
+
+
+                <!-- FORM HEADER -->
+
+                <div class="image-form">
+
+                    <img
+                        class="form-logo"
+                        src="/frontend/assets/logo.jpg"
+                        alt="Blog Học Sinh"
+                    >
+
+
+                    <div class="title">
+
+                        <h1>
+                            Đăng ký
+                        </h1>
+
+                        <span>
+                            Tạo tài khoản học sinh của bạn ✨
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FULL NAME -->
+
+                <div class="input-group">
+
+                    <label for="your-name">
+                        Họ và tên
+                    </label>
+
+                    <input
+                        type="text"
+                        name="user-name"
+                        id="your-name"
+                        placeholder="Nhập họ và tên của bạn"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="your-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        name="user-email"
+                        id="your-email"
+                        placeholder="Nhập email của bạn"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="your-password">
+                        Mật khẩu
+                    </label>
+
+                    <input
+                        type="password"
+                        name="user-password"
+                        id="your-password"
+                        placeholder="Tạo mật khẩu"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="checked-your-password">
+                        Xác nhận mật khẩu
+                    </label>
+
+                    <input
+                        type="password"
+                        name="checked-user-password"
+                        id="checked-your-password"
+                        placeholder="Nhập lại mật khẩu"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- CLASS -->
+
+                <div class="input-group">
+
+                    <label for="student-class">
+                        Lớp
+                    </label>
+
+                    <select
+                        name="class"
+                        id="student-class"
+                        required
+                    >
+
+                        <option value="">
+                            Chọn lớp của bạn
+                        </option>
+
+                        <option value="6">Lớp 6</option>
+                        <option value="7">Lớp 7</option>
+                        <option value="8">Lớp 8</option>
+                        <option value="9">Lớp 9</option>
+                        <option value="10">Lớp 10</option>
+                        <option value="11">Lớp 11</option>
+                        <option value="12">Lớp 12</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <div class="term">
+
+                    <input
+                        type="checkbox"
+                        name="acc-term"
+                        id="acc-term"
+                        required
+                    >
+
+                    <label for="acc-term">
+
+                        Tôi đồng ý với
+
+                        <a href="#">
+                            Điều khoản sử dụng
+                        </a>
+
+                        và
+
+                        <a href="#">
+                            Chính sách bảo mật
+                        </a>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- SIGN UP -->
+
+                <div class="sign-up">
+
+
+                    <button
+                        class="signup-button"
+                        type="submit"
+                    >
+
+                        <span>
+                            Đăng ký
+                        </span>
+
+                        <strong>
+                            →
+                        </strong>
+
+                    </button>
+
+
+
+                    <!-- DIVIDER -->
+
+                    <div class="ozone">
+
+                        <hr>
+
+                        <span>
+                            hoặc
+                        </span>
+
+                        <hr>
+
+                    </div>
+
+
+
+                    <!-- GOOGLE -->
+
+                    <button
+                        class="google-button"
+                        type="button"
+                    >
+
+                        <span class="google-icon">
+                            G
+                        </span>
+
+                        <span>
+                            Tiếp tục với Google
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- LOGIN -->
+
+                <div class="owned-acc">
+
+                    <span>
+                        Đã có tài khoản?
+                    </span>
+
+                    <a href="../login/login.html">
+                        Đăng nhập
+                    </a>
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
 </body>
+
 </html>
