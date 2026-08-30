@@ -28,7 +28,7 @@ async function sendData() {
     // }
 
     // điều hướng tới trang index
-    window.location.href="../../../index.html"
+    window.location.href="/frontend/components/home/index.html"
 }
 
 
