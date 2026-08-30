@@ -1,56 +1,68 @@
+/* =====================================================
+   RESET
+   ===================================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
 body {
     min-height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
+
+
+/* =====================================================
+   SHARED PAGE
+   ===================================================== */
 
 .login-page,
 .signup-page,
 .forgot-page {
     position: relative;
-
+    width: 100%;
     min-height: 100vh;
-
-    overflow: hidden;
+    display: flex;
 }
 
 
 /* =====================================================
-   SHARED SEAL BACKGROUND
+   FULL BACKGROUND IMAGE
    ===================================================== */
 
 .illustration-area {
     position: absolute;
-
     inset: 0;
 
     width: 100%;
     height: 100%;
 
     z-index: 0;
-
     overflow: hidden;
 }
 
 .seal-image {
+    display: block;
+
     width: 100%;
     height: 100%;
 
-    display: block;
-
     object-fit: cover;
-
     object-position: center;
 
     animation: sealMove 18s ease-in-out infinite alternate;
 }
 
 @keyframes sealMove {
-
     from {
         transform: scale(1);
     }
@@ -58,7 +70,33 @@ body {
     to {
         transform: scale(1.04);
     }
+}
 
+
+/* =====================================================
+   GLOBAL BACKGROUND OVERLAY
+   ===================================================== */
+
+.login-page::before,
+.signup-page::before,
+.forgot-page::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(235, 242, 250, 0.92) 0%,
+            rgba(235, 242, 250, 0.82) 43%,
+            rgba(30, 65, 120, 0.12) 70%,
+            rgba(20, 50, 100, 0.22) 100%
+        );
+
+    pointer-events: none;
 }
 
 
@@ -73,5 +111,604 @@ body {
 .forgot-introduction,
 .forgot-side {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   SHARED LEFT SIDE
+   ===================================================== */
+
+.login-introduction,
+.signup-introduction,
+.forgot-introduction {
+    width: 50%;
+    min-height: 100vh;
+
+    padding: 70px 85px;
+
+    display: flex;
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(242, 246, 252, 0.96) 0%,
+            rgba(238, 243, 250, 0.92) 65%,
+            rgba(238, 243, 250, 0.55) 100%
+        );
+}
+
+
+/* =====================================================
+   SHARED BRAND
+   ===================================================== */
+
+.brand {
+    position: relative;
+    z-index: 3;
+
+    width: fit-content;
+}
+
+.brand img {
+    display: block;
+
+    width: 205px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   SHARED INTRODUCTION CONTENT
+   ===================================================== */
+
+.introduction-content {
+    position: relative;
+    z-index: 3;
+
+    margin-top: 80px;
+
+    width: 650px;
+    max-width: 100%;
+}
+
+.introduction-content h1 {
+    color: #1f2d45;
+
+    font-size: clamp(54px, 4vw, 82px);
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+.introduction-content h1 span {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #285da8;
+}
+
+.introduction-content p {
+    margin-top: 28px;
+
+    max-width: 600px;
+
+    color: #405069;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.study-quote,
+.introduction-quote {
+    margin-top: 40px;
+
+    max-width: 420px;
+
+    padding-left: 18px;
+
+    border-left: 3px solid #3d73bb;
+
+    color: #66758c;
+
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   DECORATIONS
+   ===================================================== */
+
+.star,
+.plane {
+    position: absolute;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.star {
+    color: #6d9bd6;
+}
+
+.star-1 {
+    top: 33%;
+    left: 68%;
+
+    font-size: 26px;
+}
+
+.star-2 {
+    top: 48%;
+    left: 9%;
+
+    font-size: 18px;
+}
+
+.star-3 {
+    top: 38%;
+    right: 15%;
+
+    font-size: 15px;
+}
+
+.plane {
+    top: 31%;
+    right: 9%;
+
+    color: #3569aa;
+
+    font-size: 42px;
+
+    transform: rotate(-18deg);
+}
+
+
+/* =====================================================
+   SHARED RIGHT SIDE
+   ===================================================== */
+
+.login-side,
+.signup-side,
+.forgot-side {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+}
+
+
+/* =====================================================
+   SHARED FORM CARD
+   ===================================================== */
+
+.form {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 52px 46px 42px;
+
+    border-radius: 32px;
+
+    background:
+        rgba(255, 255, 255, 0.88);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.6);
+
+    box-shadow:
+        0 25px 70px
+        rgba(20, 45, 85, 0.22);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+
+/* =====================================================
+   FORM HEADER
+   ===================================================== */
+
+.image-form {
+    text-align: center;
+
+    margin-bottom: 34px;
+}
+
+.form-logo {
+    display: block;
+
+    width: 180px;
+    height: auto;
+
+    margin:
+        0 auto
+        18px;
+}
+
+.title h1 {
+    margin-bottom: 8px;
+
+    color: #1f2d45;
+
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.title span {
+    color: #718096;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #34435a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 17px;
+
+    border:
+        1px solid
+        #d5dce7;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background: #f8fafc;
+
+    color: #27364d;
+
+    font-size: 15px;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.input-group input::placeholder {
+    color: #9aa6b5;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2f66b5;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(47, 102, 181, 0.10);
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+   ===================================================== */
+
+.classic button,
+.signup-button {
+    position: relative;
+
+    width: 100%;
+    height: 56px;
+
+    border: none;
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3e73bd,
+            #28579d
+        );
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.classic button:hover,
+.signup-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(32, 84, 160, 0.35);
+}
+
+.classic button:active,
+.signup-button:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 5px 15px
+        rgba(32, 84, 160, 0.20);
+}
+
+.classic button strong,
+.signup-button strong {
+    position: absolute;
+
+    top: 50%;
+    right: 22px;
+
+    transform: translateY(-50%);
+
+    font-size: 22px;
+}
+
+
+/* =====================================================
+   DIVIDER
+   ===================================================== */
+
+.ozone {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 22px 0;
+}
+
+.ozone hr {
+    flex: 1;
+
+    border: none;
+
+    border-top:
+        1px solid
+        #dce2ea;
+}
+
+.ozone span {
+    color: #8a96a7;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   GOOGLE BUTTON
+   ===================================================== */
+
+.google button,
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 54px;
+
+    border:
+        1px solid
+        #d5dce7;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.95);
+
+    color: #34435a;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.google button:hover,
+.google-button:hover {
+    transform: translateY(-3px);
+
+    border-color: #b9c9df;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 30px
+        rgba(32, 84, 160, 0.14);
+}
+
+.google button:active,
+.google-button:active {
+    transform: translateY(0);
+}
+
+.google-icon {
+    display: inline-block;
+
+    margin-right: 12px;
+
+    color: #4285f4;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease;
+}
+
+.google button:hover .google-icon,
+.google-button:hover .google-icon {
+    transform: scale(1.12);
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .login-introduction,
+    .signup-introduction,
+    .forgot-introduction {
+        padding: 60px;
+    }
+
+    .login-side,
+    .signup-side,
+    .forgot-side {
+        padding: 35px;
+    }
+
+    .form {
+        padding: 42px 32px 36px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 760px) {
+
+    .login-page,
+    .signup-page,
+    .forgot-page {
+        flex-direction: column;
+    }
+
+    .login-page::before,
+    .signup-page::before,
+    .forgot-page::before {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(235, 242, 250, 0.92),
+                rgba(235, 242, 250, 0.82)
+            );
+    }
+
+    .login-introduction,
+    .signup-introduction,
+    .forgot-introduction {
+        width: 100%;
+        min-height: 42vh;
+
+        padding: 35px 30px;
+    }
+
+    .login-side,
+    .signup-side,
+    .forgot-side {
+        width: 100%;
+        min-height: auto;
+
+        padding: 35px 20px;
+    }
+
+    .brand img {
+        width: 170px;
+    }
+
+    .introduction-content {
+        margin-top: 60px;
+    }
+
+    .introduction-content h1 {
+        font-size: 46px;
+    }
+
+    .introduction-content h1 span {
+        white-space: normal;
+    }
+
+    .form {
+        max-width: 550px;
+
+        margin: 0 auto;
+
+        padding: 38px 24px 32px;
+
+        border-radius: 25px;
+    }
+
+    .star-1,
+    .star-2,
+    .star-3,
+    .plane {
+        display: none;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 430px) {
+
+    .form {
+        padding: 30px 18px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .form-logo {
+        width: 150px;
+    }
+
 }

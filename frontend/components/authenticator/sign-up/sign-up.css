@@ -2,42 +2,34 @@
    SIGN UP PAGE
    ===================================================== */
 
-
-/* =====================================================
-   PAGE SCROLL FIX
-   ===================================================== */
-
-body {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-
-/* The sign-up page can be taller than the viewport */
-
-.login-page {
+.signup-page {
     min-height: 100vh;
-    height: auto;
-    overflow: visible;
 }
 
 
 /* =====================================================
-   RIGHT SIDE
+   SIGN UP INTRODUCTION
    ===================================================== */
 
-.login-side {
-    min-height: 100vh;
-    padding: 50px;
+.signup-introduction .introduction-content {
+    margin-top: 80px;
 }
 
 
 /* =====================================================
-   FORM SIZE
+   SIGN UP SIDE
    ===================================================== */
 
-.form {
-    width: 100%;
+.signup-side {
+    align-items: flex-start;
+}
+
+
+/* =====================================================
+   SIGN UP FORM
+   ===================================================== */
+
+.signup-side .form {
     max-width: 560px;
 
     padding:
@@ -53,25 +45,19 @@ body {
    FORM HEADER
    ===================================================== */
 
-.image-form {
-    text-align: center;
+.signup-side .image-form {
     margin-bottom: 28px;
 }
 
-
-.form-logo {
-    display: block;
-
+.signup-side .form-logo {
     width: 175px;
-    height: auto;
 
     margin:
         0 auto
         14px;
 }
 
-
-.title h1 {
+.signup-side .title h1 {
     font-size: 34px;
 }
 
@@ -80,60 +66,23 @@ body {
    INPUTS
    ===================================================== */
 
-.input-group {
+.signup-side .input-group {
     margin-bottom: 14px;
 }
 
-
-.input-group label {
-    display: block;
-
+.signup-side .input-group label {
     margin-bottom: 6px;
-
-    color: #34435a;
-    font-size: 14px;
-    font-weight: 700;
 }
 
-
-.input-group input,
-.input-group select {
-    width: 100%;
+.signup-side .input-group input,
+.signup-side .input-group select {
     height: 48px;
 
     padding: 0 16px;
 
-    border: 1px solid #d5dce7;
     border-radius: 13px;
 
-    outline: none;
-
-    background: #f8fafc;
-    color: #27364d;
-
     font-size: 14px;
-
-    transition:
-        border-color 0.2s ease,
-        background 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-.input-group input:focus,
-.input-group select:focus {
-    border-color: #2f66b5;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 0 0 4px
-        rgba(47, 102, 181, 0.10);
-}
-
-
-.input-group select {
-    cursor: pointer;
 }
 
 
@@ -143,19 +92,14 @@ body {
 
 .term {
     display: flex;
-
     align-items: flex-start;
 
     gap: 10px;
 
-    margin:
-        8px
-        0
-        20px;
+    margin: 8px 0 20px;
 
     color: #65748a;
 }
-
 
 .term input {
     width: 17px;
@@ -168,12 +112,10 @@ body {
     accent-color: #2d65b4;
 }
 
-
 .term label {
     font-size: 13px;
     line-height: 1.6;
 }
-
 
 .term a {
     color: #315d9d;
@@ -182,7 +124,6 @@ body {
 
     text-decoration: none;
 }
-
 
 .term a:hover {
     text-decoration: underline;
@@ -199,188 +140,11 @@ body {
 
 
 /* =====================================================
-   PRIMARY SIGN UP BUTTON
-   ===================================================== */
-
-.acc-has-been-created button {
-    position: relative;
-
-    width: 100%;
-    height: 54px;
-
-    border: none;
-    border-radius: 14px;
-
-    cursor: pointer;
-
-    background:
-        linear-gradient(
-            135deg,
-            #3e73bd,
-            #28579d
-        );
-
-    color: #ffffff;
-
-    font-size: 16px;
-    font-weight: 700;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-
-.acc-has-been-created button:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 30px
-        rgba(32, 84, 160, 0.35);
-}
-
-
-.acc-has-been-created button:active {
-    transform: translateY(0);
-
-    box-shadow:
-        0 5px 15px
-        rgba(32, 84, 160, 0.20);
-}
-
-
-.acc-has-been-created button strong {
-    position: absolute;
-
-    right: 22px;
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    font-size: 22px;
-}
-
-
-/* =====================================================
-   DIVIDER
-   ===================================================== */
-
-.ozone {
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin: 20px 0;
-}
-
-
-.ozone hr {
-    flex: 1;
-
-    border: none;
-
-    border-top:
-        1px solid
-        #dce2ea;
-}
-
-
-.ozone span {
-    color: #8a96a7;
-
-    font-size: 14px;
-}
-
-
-/* =====================================================
-   GOOGLE BUTTON
-   ===================================================== */
-
-.google button {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 52px;
-
-    border:
-        1px solid
-        #d5dce7;
-
-    border-radius: 14px;
-
-    background:
-        rgba(255, 255, 255, 0.95);
-
-    color: #34435a;
-
-    cursor: pointer;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease,
-        background 0.2s ease;
-}
-
-
-.google button:hover {
-    transform: translateY(-3px);
-
-    border-color: #b9c9df;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 12px 30px
-        rgba(32, 84, 160, 0.14);
-}
-
-
-.google button:active {
-    transform: translateY(0);
-
-    box-shadow:
-        0 5px 15px
-        rgba(32, 84, 160, 0.10);
-}
-
-
-.google-icon {
-    display: inline-block;
-
-    margin-right: 12px;
-
-    color: #4285f4;
-
-    font-size: 20px;
-    font-weight: 800;
-
-    transition:
-        transform 0.2s ease;
-}
-
-
-.google button:hover .google-icon {
-    transform: scale(1.12);
-}
-
-
-/* =====================================================
    LOGIN LINK
    ===================================================== */
 
 .owned-acc {
     display: flex;
-
     justify-content: center;
 
     gap: 6px;
@@ -392,7 +156,6 @@ body {
     font-size: 14px;
 }
 
-
 .owned-acc a {
     color: #315d9d;
 
@@ -401,7 +164,6 @@ body {
 
     text-decoration: none;
 }
-
 
 .owned-acc a:hover {
     text-decoration: underline;
@@ -414,16 +176,11 @@ body {
 
 @media (max-width: 1000px) {
 
-    .form {
+    .signup-side .form {
         padding:
             38px
             30px
             32px;
-    }
-
-
-    .login-side {
-        padding: 35px;
     }
 
 }
@@ -435,46 +192,17 @@ body {
 
 @media (max-width: 760px) {
 
-    .login-page {
-        flex-direction: column;
+    .signup-side {
+        align-items: center;
     }
 
-
-    .login-introduction {
-        width: 100%;
-
-        min-height: 42vh;
-
-        padding: 35px 30px;
-    }
-
-
-    .login-side {
-        width: 100%;
-
-        min-height: auto;
-
-        padding: 35px 20px;
-    }
-
-
-    .form {
-        max-width: 550px;
-
+    .signup-side .form {
         margin: 0 auto;
 
         padding:
             36px
             24px
             30px;
-    }
-
-
-    .star-1,
-    .star-2,
-    .star-3,
-    .plane {
-        display: none;
     }
 
 }
@@ -486,22 +214,15 @@ body {
 
 @media (max-width: 430px) {
 
-    .form {
+    .signup-side .form {
         padding:
             30px
             18px;
     }
 
-
-    .title h1 {
-        font-size: 30px;
-    }
-
-
-    .form-logo {
+    .signup-side .form-logo {
         width: 150px;
     }
-
 
     .term label {
         font-size: 12px;

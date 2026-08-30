@@ -3,335 +3,61 @@
    ===================================================== */
 
 .forgot-page {
-    position: relative;
-
-    width: 100%;
     min-height: 100vh;
-
-    display: flex;
-
-    overflow: hidden;
 }
 
 
 /* =====================================================
-   LEFT SIDE
+   INTRODUCTION
    ===================================================== */
 
-.forgot-introduction {
-    position: relative;
-
-    z-index: 1;
-
-    width: 50%;
-
-    min-height: 100vh;
-
-    padding: 70px 85px;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(242, 246, 252, 0.96) 0%,
-            rgba(238, 243, 250, 0.92) 65%,
-            rgba(238, 243, 250, 0.55) 100%
-        );
-}
-
-
-/* =====================================================
-   BRAND
-   ===================================================== */
-
-.brand img {
-    width: 205px;
-
-    display: block;
-
-    object-fit: contain;
-}
-
-
-/* =====================================================
-   INTRODUCTION CONTENT
-   ===================================================== */
-
-.introduction-content {
+.forgot-introduction .introduction-content {
     margin-top: 95px;
-
-    max-width: 720px;
-
-    position: relative;
-
-    z-index: 2;
-}
-
-
-.introduction-content h1 {
-    margin: 0;
-
-    font-size: clamp(3.5rem, 4.8vw, 5.6rem);
-
-    line-height: 1.05;
-
-    font-weight: 800;
-
-    letter-spacing: -2px;
-
-    color: #1f2d44;
-}
-
-
-.introduction-content h1 span {
-    display: block;
-
-    white-space: nowrap;
-
-    color: #315f9f;
-}
-
-
-.introduction-content p {
-    margin-top: 28px;
-
-    max-width: 620px;
-
-    font-size: 1.15rem;
-
-    line-height: 1.7;
-
-    color: #43546a;
 }
 
 
 /* =====================================================
-   QUOTE
+   FORM
    ===================================================== */
 
-.introduction-quote {
-    margin-top: 32px;
-
-    padding-left: 15px;
-
-    border-left: 2px solid #3567a8;
-}
-
-
-.introduction-quote span {
-    font-size: 0.95rem;
-
-    font-style: italic;
-
-    color: #6d7b90;
-}
-
-
-/* =====================================================
-   DECORATIONS
-   ===================================================== */
-
-.star,
-.plane {
-    position: absolute;
-
-    z-index: 2;
-
-    color: #3567a8;
-
-    pointer-events: none;
-}
-
-
-.star {
-    font-size: 1.3rem;
-}
-
-
-.star-1 {
-    top: 31%;
-    right: 13%;
-}
-
-
-.star-2 {
-    top: 49%;
-    right: 16%;
-
-    font-size: 0.8rem;
-}
-
-
-.star-3 {
-    top: 50%;
-    left: 9%;
-
-    font-size: 0.8rem;
-}
-
-
-.plane {
-    top: 32%;
-    right: 8%;
-
-    font-size: 2.1rem;
-
-    transform: rotate(-15deg);
-}
-
-
-/* =====================================================
-   RIGHT SIDE
-   ===================================================== */
-
-.forgot-side {
-    position: relative;
-
-    z-index: 1;
-
-    width: 50%;
-
-    min-height: 100vh;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 40px 60px;
-}
-
-
-/* =====================================================
-   FORM CARD
-   ===================================================== */
-
-.form {
-    width: 100%;
-
+.forgot-side .form {
     max-width: 560px;
 
-    padding: 58px 52px 48px;
-
-    border-radius: 32px;
-
-    background: rgba(255, 255, 255, 0.91);
-
-    border: 1px solid rgba(255, 255, 255, 0.65);
-
-    box-shadow:
-        0 25px 70px rgba(20, 45, 85, 0.18);
-
-    backdrop-filter: blur(12px);
+    padding:
+        58px
+        52px
+        48px;
 }
 
 
 /* =====================================================
-   FORM HEADER
+   FORGOT LOGO
    ===================================================== */
 
-.image-form {
-    text-align: center;
-
-    margin-bottom: 40px;
-}
-
-
 .form-forgot-logo img {
-    width: 180px;
-
     display: block;
 
-    margin: 0 auto 28px;
+    width: 180px;
+
+    margin:
+        0 auto
+        28px;
 
     object-fit: contain;
 }
 
 
-.title h1 {
-    margin: 0;
-
-    font-size: 2.35rem;
-
-    line-height: 1.2;
-
-    font-weight: 800;
-
-    color: #1f2d44;
-}
-
-
-.title span {
-    display: block;
-
-    margin-top: 10px;
-
-    font-size: 1rem;
-
-    color: #6c7889;
-}
-
-
 /* =====================================================
-   INPUT
+   FORGOT INPUT
    ===================================================== */
 
-.input-group {
+.forgot-side .input-group {
     display: flex;
-
     flex-direction: column;
 
     gap: 9px;
-}
 
-
-.input-group label {
-    font-size: 0.95rem;
-
-    font-weight: 700;
-
-    color: #3d4d63;
-}
-
-
-.input-group input {
-    width: 100%;
-
-    height: 52px;
-
-    padding: 0 17px;
-
-    border: 1px solid #cbd5e1;
-
-    border-radius: 15px;
-
-    outline: none;
-
-    background: rgba(248, 250, 252, 0.85);
-
-    color: #26364b;
-
-    font-size: 1rem;
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-}
-
-
-.input-group input::placeholder {
-    color: #9aa6b5;
-}
-
-
-.input-group input:focus {
-    border-color: #3567a8;
-
-    background: #ffffff;
-
-    box-shadow:
-        0 0 0 4px rgba(53, 103, 168, 0.12);
+    margin-bottom: 0;
 }
 
 
@@ -344,127 +70,28 @@
 }
 
 
-.classic button {
-    width: 100%;
-
-    height: 54px;
-
-    border: none;
-
-    border-radius: 15px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 12px;
-
-    cursor: pointer;
-
-    color: white;
-
-    background:
-        linear-gradient(
-            135deg,
-            #416fae,
-            #285795
-        );
-
-    font-size: 1.05rem;
-
-    font-weight: 700;
-
-    box-shadow:
-        0 10px 25px rgba(40, 87, 149, 0.22);
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-.classic button strong {
-    position: absolute;
-
-    right: 22px;
-
-    font-size: 1.4rem;
-
-    font-weight: 400;
-}
-
-
-.classic button {
-    position: relative;
-}
-
-
-.classic button:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 15px 30px rgba(40, 87, 149, 0.3);
-}
-
-
-/* =====================================================
-   DIVIDER
-   ===================================================== */
-
-.forgot-send .ozone {
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin: 24px 0;
-
-    text-align: center;
-}
-
-
-.ozone hr {
-    flex: 1;
-
-    border: none;
-
-    height: 1px;
-
-    background: #d9e0e9;
-}
-
-
-.ozone span {
-    color: #8a96a5;
-
-    font-size: 0.9rem;
-}
-
-
 /* =====================================================
    BACK TO LOGIN
    ===================================================== */
 
-.forgot-send .go-back button {
+.go-back button {
     width: 100%;
-
     height: 52px;
 
-    border: 1px solid #cbd5e1;
+    border:
+        1px solid
+        #cbd5e1;
 
     border-radius: 15px;
 
     cursor: pointer;
 
-    background: rgba(255, 255, 255, 0.7);
+    background:
+        rgba(255, 255, 255, 0.70);
 
     color: #315f9f;
 
-    font-size: 1rem;
-
+    font-size: 15px;
     font-weight: 700;
 
     transition:
@@ -473,8 +100,7 @@
         transform 0.2s ease;
 }
 
-
-.forgot-send .go-back button:hover {
+.go-back button:hover {
     background: #f4f8fd;
 
     border-color: #315f9f;
@@ -482,11 +108,10 @@
     transform: translateY(-1px);
 }
 
-
-.forgot-send .go-back button span {
+.go-back button span {
     margin-right: 8px;
 
-    font-size: 1.2rem;
+    font-size: 19px;
 }
 
 
@@ -496,7 +121,6 @@
 
 .email-check {
     display: flex;
-
     align-items: flex-start;
 
     gap: 12px;
@@ -505,7 +129,9 @@
 
     padding: 15px 18px;
 
-    border: 1px solid rgba(74, 120, 177, 0.2);
+    border:
+        1px solid
+        rgba(74, 120, 177, 0.20);
 
     border-radius: 15px;
 
@@ -513,24 +139,21 @@
         rgba(225, 236, 249, 0.65);
 }
 
-
 .email-check-icon {
     flex-shrink: 0;
 
-    font-size: 1.2rem;
-
     color: #3567a8;
-}
 
+    font-size: 19px;
+}
 
 .email-check p {
     margin: 0;
 
-    font-size: 0.88rem;
-
-    line-height: 1.6;
-
     color: #5b6b80;
+
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 
@@ -540,22 +163,7 @@
 
 @media (max-width: 1000px) {
 
-    .forgot-introduction {
-        padding: 60px;
-    }
-
-
-    .forgot-side {
-        padding: 35px;
-    }
-
-
-    .introduction-content {
-        margin-top: 100px;
-    }
-
-
-    .form {
+    .forgot-side .form {
         padding: 45px 35px;
     }
 
@@ -568,83 +176,16 @@
 
 @media (max-width: 760px) {
 
-    body {
-        overflow-y: auto;
-    }
-
-
-    .forgot-page {
-        flex-direction: column;
-
-        min-height: 100vh;
-    }
-
-
-    .forgot-introduction {
-        width: 100%;
-
-        min-height: 42vh;
-
-        padding: 35px 30px;
-
-        background:
-            rgba(238, 243, 250, 0.93);
-    }
-
-
-    .brand img {
-        width: 170px;
-    }
-
-
-    .introduction-content {
+    .forgot-introduction .introduction-content {
         margin-top: 60px;
     }
 
-
-    .introduction-content h1 {
-        font-size: 46px;
-    }
-
-
-    .introduction-content h1 span {
-        white-space: normal;
-    }
-
-
-    .introduction-quote {
-        margin-top: 22px;
-    }
-
-
-    .forgot-side {
-        width: 100%;
-
-        min-height: auto;
-
-        padding: 35px 20px;
-    }
-
-
-    .form {
-        max-width: 550px;
-
+    .forgot-side .form {
         padding: 40px 25px;
-
-        border-radius: 25px;
     }
-
 
     .form-forgot-logo img {
         width: 160px;
-    }
-
-
-    .star-1,
-    .star-2,
-    .star-3,
-    .plane {
-        display: none;
     }
 
 }
