@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* =====================================================
+   PACIFICO HEADINGS
+   ===================================================== */
+
+.introduction-content h1,
+.title h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+
+
 /* =====================================================
    RESET
    ===================================================== */
@@ -177,13 +192,11 @@ body {
 
 .introduction-content h1 {
     color: #1f2d45;
-
+    font-family: "Pacifico", cursive;
     font-size: clamp(54px, 4vw, 82px);
-    line-height: 1.05;
-
-    font-weight: 800;
-
-    letter-spacing: -2px;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 .introduction-content h1 span {
@@ -193,6 +206,7 @@ body {
 
     color: #285da8;
 }
+
 
 .introduction-content p {
     margin-top: 28px;
@@ -342,11 +356,11 @@ body {
 
 .title h1 {
     margin-bottom: 8px;
-
     color: #1f2d45;
-
+    font-family: "Pacifico", cursive;
     font-size: 38px;
-    font-weight: 800;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 .title span {
