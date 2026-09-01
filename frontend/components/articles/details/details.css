@@ -772,7 +772,56 @@ img {
 
 }
 
+/* =========================================================
+   SHOW ALL COMMENTS
+   ========================================================= */
 
+.comments-actions {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 18px;
+}
+
+
+.show-all-comments {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 10px 0px;
+    width: 100%;
+
+    border: 1px solid #dbe4ee;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #2563a8;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.show-all-comments:hover {
+    background: #f3f8ff;
+
+    border-color: #2563a8;
+
+    transform: translateY(-1px);
+}
+
+
+.show-all-comments span {
+    font-size: 18px;
+    line-height: 1;
+}
 
 /* =========================================================
    SIDEBAR
