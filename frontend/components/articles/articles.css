@@ -1629,3 +1629,20 @@ img {
         min-height: 134px;
     }
 }
+
+/* =========================================================
+   ARTICLE CARD INTERACTION
+   ========================================================= */
+
+.article-card {
+    cursor: pointer;
+}
+
+.article-card:focus-visible {
+    outline: 3px solid rgba(40, 116, 216, 0.22);
+    outline-offset: 3px;
+}
+
+.save-article.saved {
+    color: var(--blue);
+}

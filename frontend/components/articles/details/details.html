@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title id="page-title">
+        Blog Học Sinh — Bài viết
+    </title>
+
+
+    <!-- Shared menu -->
+
+    <link
+        rel="stylesheet"
+        href="/components/menu.css"
+    >
+
+
+    <!-- Article details -->
+
+    <link
+        rel="stylesheet"
+        href="details.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+
+        <a
+            href="/components/home/index.html"
+            class="logo"
+            aria-label="Blog Học Sinh"
+        >
+
+            <img
+                src="/assets/logo.png"
+                alt="Blog Học Sinh"
+            >
+
+        </a>
+
+
+        <nav
+            class="main-nav"
+            aria-label="Điều hướng chính"
+        >
+
+            <a href="/components/home/index.html">
+
+                🏠
+
+                <span>
+                    Trang chủ
+                </span>
+
+            </a>
+
+
+            <a
+                href="/components/articles/articles.html"
+                class="active"
+            >
+
+                📄
+
+                <span>
+                    Bài viết
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                🧠
+
+                <span>
+                    Chủ đề
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                📝
+
+                <span>
+                    Bài tập
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="header-right">
+
+
+            <div class="header-search">
+
+                <input
+                    type="search"
+                    placeholder="Tìm kiếm bài viết, chủ đề..."
+                    aria-label="Tìm kiếm"
+                >
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="notification"
+                aria-label="Thông báo"
+            >
+
+                <span class="notification-icon">
+                    🔔
+                </span>
+
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="user-account"
+                aria-label="Tài khoản"
+            >
+
+                <img
+                    src="/assets/DON-CUTE.jpg"
+                    alt="Gia Huy"
+                >
+
+
+                <span class="user-text">
+
+                    <strong>
+                        Chào, Gia Huy
+                    </strong>
+
+                    <small>
+                        Lớp 10A1
+                    </small>
+
+                </span>
+
+
+                <span class="user-arrow">
+                    ▼
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE
+         ===================================================== -->
+
+    <main class="details-page">
+
+
+        <!-- =================================================
+             BACK BUTTON
+             ================================================= -->
+
+        <a
+            href="../articles.html"
+            class="back-button"
+        >
+
+            ←
+
+            <span>
+                Quay lại bài viết
+            </span>
+
+        </a>
+
+
+
+        <div class="details-layout">
+
+
+            <!-- =============================================
+                 MAIN ARTICLE
+                 ============================================= -->
+
+            <article class="article-main">
+
+
+                <!-- COVER -->
+
+                <div class="article-hero">
+
+                    <img
+                        id="article-cover"
+                        src="/assets/coolest.png"
+                        alt=""
+                    >
+
+                </div>
+
+
+
+                <!-- CATEGORY -->
+
+                <div
+                    id="article-category"
+                    class="article-category math"
+                >
+
+                    TOÁN HỌC
+
+                </div>
+
+
+
+                <!-- TITLE -->
+
+                <h1 id="article-title">
+
+                    5 phương pháp học Toán hiệu quả
+                    giúp bạn tiến bộ mỗi ngày
+
+                </h1>
+
+
+
+                <!-- INTRODUCTION -->
+
+                <p
+                    id="article-introduction"
+                    class="article-introduction"
+                >
+
+                    Tổng hợp những phương pháp học Toán khoa học,
+                    dễ áp dụng cho mọi học sinh. Áp dụng đều đặn
+                    mỗi ngày để đạt kết quả tốt hơn.
+
+                </p>
+
+
+
+                <!-- META -->
+
+                <div class="article-information">
+
+
+                    <div class="article-author">
+
+                        <img
+                            id="author-avatar"
+                            src="/assets/don.png"
+                            alt="Tác giả"
+                        >
+
+
+                        <div>
+
+                            <strong id="author-name">
+                                Minh Anh
+                            </strong>
+
+
+                            <small id="author-class">
+                                Lớp 10A1
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="article-stats">
+
+                        <span id="reading-time">
+
+                            ◷
+                            5 phút đọc
+
+                        </span>
+
+
+                        <span id="publish-date">
+
+                            ▣
+                            22/05/2024
+
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="article-actions">
+
+                        <button
+                            type="button"
+                            id="save-button"
+                            class="article-action"
+                        >
+
+                            ♡
+
+                            <span>
+                                Lưu bài viết
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            id="share-button"
+                            class="article-action"
+                        >
+
+                            ⤴
+
+                            <span>
+                                Chia sẻ
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     ARTICLE CONTENT
+                     ========================================= -->
+
+                <div
+                    id="article-body"
+                    class="article-body"
+                >
+
+
+                    <!-- Content generated by details.js -->
+
+
+                </div>
+
+
+
+                <!-- =========================================
+                     COMMENTS
+                     ========================================= -->
+
+                <section class="comments-section">
+
+
+                    <h2>
+                        Bình luận
+                        <span>
+                            (24)
+                        </span>
+                    </h2>
+
+
+                    <div class="comment-input">
+
+                        <img
+                            src="/assets/DON-CUTE.jpg"
+                            alt=""
+                        >
+
+
+                        <input
+                            type="text"
+                            placeholder="Viết bình luận của bạn..."
+                        >
+
+
+                        <button
+                            type="button"
+                        >
+
+                            Gửi
+
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="comment-list">
+
+
+                        <div class="comment">
+
+                            <img
+                                src="/assets/don.png"
+                                alt=""
+                            >
+
+
+                            <div class="comment-content">
+
+                                <strong>
+                                    Quang Huy
+                                </strong>
+
+
+                                <span>
+                                    Lớp 10A1 · 2 giờ trước
+                                </span>
+
+
+                                <p>
+                                    Bài viết rất hữu ích!
+                                    Mình đã áp dụng phương pháp này
+                                    và thấy việc học hiệu quả hơn.
+                                </p>
+
+
+                                <div class="comment-actions">
+
+                                    <button>
+                                        ♡ 12
+                                    </button>
+
+
+                                    <button>
+                                        Trả lời
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+            </article>
+
+
+
+            <!-- =============================================
+                 SIDEBAR
+                 ============================================= -->
+
+            <aside class="details-sidebar">
+
+
+                <!-- TABLE OF CONTENTS -->
+
+                <section class="sidebar-card">
+
+
+                    <div class="sidebar-heading">
+
+                        <h2>
+                            📋 Mục lục
+                        </h2>
+
+
+                        <button
+                            type="button"
+                            id="toc-toggle"
+                        >
+
+                            Thu gọn
+                            ⌃
+
+                        </button>
+
+                    </div>
+
+
+                    <nav
+                        id="table-of-contents"
+                        class="table-of-contents"
+                    >
+
+                        <!-- Generated by JS -->
+
+                    </nav>
+
+                </section>
+
+
+
+                <!-- RELATED ARTICLES -->
+
+                <section class="sidebar-card">
+
+
+                    <div class="sidebar-heading">
+
+                        <h2>
+                            🔗 Bài viết liên quan
+                        </h2>
+
+
+                        <a href="../articles.html">
+
+                            Xem tất cả →
+                            
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        id="related-articles"
+                        class="related-list"
+                    >
+
+                        <!-- Generated by JS -->
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- DOWNLOAD -->
+
+                <section class="sidebar-card">
+
+
+                    <div class="sidebar-heading">
+
+                        <h2>
+                            📥 Tài liệu tải về
+                        </h2>
+
+
+                        <a href="#">
+
+                            Xem tất cả →
+                            
+                        </a>
+
+                    </div>
+
+
+                    <div class="download-list">
+
+
+                        <a href="#" class="download-item">
+
+                            <span class="file-icon">
+                                PDF
+                            </span>
+
+
+                            <div>
+
+                                <strong>
+                                    Tổng hợp công thức Toán
+                                </strong>
+
+                                <small>
+                                    PDF · 1.2 MB
+                                </small>
+
+                            </div>
+
+
+                            <span>
+                                ⇩
+                            </span>
+
+                        </a>
+
+
+                        <a href="#" class="download-item">
+
+                            <span class="file-icon">
+                                PDF
+                            </span>
+
+
+                            <div>
+
+                                <strong>
+                                    Bài tập luyện tập
+                                </strong>
+
+                                <small>
+                                    PDF · 2.4 MB
+                                </small>
+
+                            </div>
+
+
+                            <span>
+                                ⇩
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- CTA -->
+
+                <section class="discover-card">
+
+
+                    <div>
+
+                        <h2>
+                            Khám phá thêm nhiều bài viết hay!
+                        </h2>
+
+
+                        <p>
+                            Cập nhật kiến thức mới mỗi ngày
+                            cùng Blog Học Sinh.
+                        </p>
+
+
+                        <a href="../articles.html">
+
+                            Xem tất cả bài viết →
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Blog Học Sinh
+        </p>
+
+    </footer>
+
+
+
+    <script src="details.js"></script>
+
+</body>
+
+</html>
