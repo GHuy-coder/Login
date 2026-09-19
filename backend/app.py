@@ -1,3 +1,5 @@
+import json
+
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import hashlib, re
@@ -10,22 +12,11 @@ CORS(app)
 
 
 accounts = [
-    {
-        "fullname": "admin test",
-        "classroom": "10A",
-        "email": "admin@gmail.com",
-        "password": "827ccb0eea8a706c4c34a16891f84e7b"
-    },
-    {
-        "fullname": "guest test",
-        "classroom": "10A",
-        "email": "guest@gmail.com",
-        "password": "12345"
-    }
-
+    
 ]
 
-
+with open("accounts.json", "r", encoding="utf-8") as f:
+    accounts = json.loads(f.read())
 
 @app.get("/")
 def home():
@@ -60,6 +51,7 @@ def login():
         }), 400
 
     password = encrypt(password)
+    print(password)
 
 
     print("accounts", accounts)
@@ -139,8 +131,14 @@ def signup():
         "classroom": classroom
     }
 
+
+
     accounts.append(new_account)
 
+    with open("accounts.json", "w", encoding="utf-8") as f:
+        f.write(json.dumps(accounts))
+
+    print(accounts)
     return jsonify({
         "success": "Create new user succesfully!"
     }),200

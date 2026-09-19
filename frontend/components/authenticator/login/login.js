@@ -3,7 +3,7 @@ const loginForm = document.querySelector("#login-form")
 const apiUrl = "http://127.0.0.1:5000/api"
 
 async function sendData() {
-    const formData = new FormData(loginForm)
+    const formData = new FormData(signupForm)
 
     const email = formData.get("user-email")
     const password = formData.get("user-password")
@@ -44,7 +44,7 @@ async function sendData() {
 
 
 // Take over form submission
-loginForm.addEventListener("submit", (event) => {
+signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
     sendData();
 
