@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -15,7 +16,9 @@ accounts = [
     
 ]
 
-with open("accounts.json", "r", encoding="utf-8") as f:
+ACCOUNTS_FILE = Path(__file__).resolve().with_name("accounts.json")
+
+with ACCOUNTS_FILE.open("r", encoding="utf-8") as f:
     accounts = json.loads(f.read())
 
 @app.get("/")
@@ -135,7 +138,7 @@ def signup():
 
     accounts.append(new_account)
 
-    with open("accounts.json", "w", encoding="utf-8") as f:
+    with ACCOUNTS_FILE.open("w", encoding="utf-8") as f:
         f.write(json.dumps(accounts))
 
     print(accounts)
