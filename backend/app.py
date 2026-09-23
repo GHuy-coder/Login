@@ -5,6 +5,8 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import hashlib, re
 
+import random,string 
+
 
 
 
@@ -147,6 +149,43 @@ def signup():
     }),200
 
         
+# /api/forgot
+# @param email
+@app.post("/api/forgot")
+def forgot():
+
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify({
+            "error": "Body should be a JSON"
+        }),400
+
+    email = data.get("email")
+
+    length = 8
+    password = "".join(random.choices(string.ascii_letters + string.digits, k= length))
+
+    if password:
+
+        for account in accounts:
+            if account["email"] == email:
+                # Mã hóa nó trước
+                new_password = encrypt(password)
+                # gán mật khẩu mới vào account
+                account["password"] = new_password
+                break
+        else:
+            return jsonify({
+                "error": "Email not found"
+            })
+
+    
+        with open("accounts.json", "w", encoding="utf-8") as f:
+            f.write(json.dumps(accounts))   
+
+        return jsonify({
+            "success": f"Your password is {password}"
+        })
 
 
 
