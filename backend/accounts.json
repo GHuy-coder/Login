@@ -1,24 +1,20 @@
-<<<<<<< HEAD
 [
-    {
-        "fullname": "admin test",
-        "classroom": "10A",
-        "email": "admin@gmail.com",
-        "password": "25f9e794323b453885f5181f1b624d0b"
-    },
-    {
-        "fullname": "guest test",
-        "classroom": "10A",
-        "email": "guest@gmail.com",
-        "password": "12345"
-    },
-    {
-        "email": "abc@gmail.com",
-        "password": "f4a4f7c0c6bb311a8b6d57228217cfe5",
-        "fullname": "ABC",
-        "classroom": "12"
-    }
+  {
+    "fullname": "admin test",
+    "classroom": "10A",
+    "email": "admin@gmail.com",
+    "password": "25f9e794323b453885f5181f1b624d0b"
+  },
+  {
+    "fullname": "guest test",
+    "classroom": "10A",
+    "email": "guest@gmail.com",
+    "password": "12345"
+  },
+  {
+    "email": "abc@gmail.com",
+    "password": "f4a4f7c0c6bb311a8b6d57228217cfe5",
+    "fullname": "ABC",
+    "classroom": "12"
+  }
 ]
-=======
-[{"fullname": "admin test", "classroom": "10A", "email": "admin@gmail.com", "password": "e8e3f4e88a5e21428893ccc718ae8234"}, {"fullname": "guest test", "classroom": "10A", "email": "guest@gmail.com", "password": "12345"}, {"email": "abc@gmail.com", "password": "f4a4f7c0c6bb311a8b6d57228217cfe5", "fullname": "ABC", "classroom": "12"}]
->>>>>>> 945c9854414343a9c8f59dd77226c728e83ffc73

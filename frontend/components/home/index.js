@@ -14,25 +14,13 @@ function checkLogin(){
 
 checkLogin()
 
-<<<<<<< HEAD
 // logout
 const logout = document.getElementById("user-arrow")
 
 logout.addEventListener("click", function (){
     const user_storage = localStorage.clear("users")
-=======
-
-const logout = document.getElementById("user-arrow")
-
-logout.addEventListener("click", function (){
-    const user_storage = localStorage.clear()
->>>>>>> 945c9854414343a9c8f59dd77226c728e83ffc73
     if (!user_storage){
         window.location.href = "/components/authenticator/login/login.html"
 
     }
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> 945c9854414343a9c8f59dd77226c728e83ffc73
