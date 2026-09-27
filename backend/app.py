@@ -1,4 +1,5 @@
-import json
+﻿import json
+from pathlib import Path
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -17,12 +18,14 @@ accounts = [
     
 ]
 
-with open("accounts.json", "r", encoding="utf-8") as f:
+ACCOUNTS_FILE = Path(__file__).resolve().with_name("accounts.json")
+
+with ACCOUNTS_FILE.open("r", encoding="utf-8-sig") as f:
     accounts = json.loads(f.read())
 
 @app.get("/")
 def home():
-    return "Đây là api blog học sinh"
+    return "ÄÃ¢y lÃ  api blog há»c sinh"
 
 
 
@@ -137,7 +140,7 @@ def signup():
 
     accounts.append(new_account)
 
-    with open("accounts.json", "w", encoding="utf-8") as f:
+    with ACCOUNTS_FILE.open("w", encoding="utf-8") as f:
         f.write(json.dumps(accounts))
 
     print(accounts)
@@ -166,9 +169,9 @@ def forgot():
 
         for account in accounts:
             if account["email"] == email:
-                # Mã hóa nó trước
+                # MÃ£ hÃ³a nÃ³ trÆ°á»›c
                 new_password = encrypt(password)
-                # gán mật khẩu mới vào account
+                # gÃ¡n máº­t kháº©u má»›i vÃ o account
                 account["password"] = new_password
                 break
         else:
@@ -200,3 +203,4 @@ def get_articles():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
