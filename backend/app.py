@@ -188,6 +188,12 @@ def forgot():
         })
 
 
+@app.get("/api/articles")
+def get_articles():
+    with open("posts.json", "r", encoding="utf-8") as file:
+        data = json.load(file)
+
+    return jsonify(data)
 
 
         

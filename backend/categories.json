@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "class": "math",
+        "name": "TOÁN HỌC"
+    },
+    {
+        "id": 2,
+        "class": "python",
+        "name": "PYTHON"
+    }
+]
