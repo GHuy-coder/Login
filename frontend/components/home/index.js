@@ -32,7 +32,7 @@ const apiUrl = "http://127.0.0.1:5000/api"
 
 async function getArticles() {
     try {
-        const response = await fetch(`${apiUrl}/articles`, {
+        const response = await fetch(`${apiUrl}/articles-index`, {
             method: "GET",
             headers: { "Content-Type": "application/json" },
         });
@@ -46,6 +46,31 @@ async function getArticles() {
     }
 }
 
+function renderSavedList(savedArticles) {
+    const savedList = document.getElementById("saved-list");
+    savedList.innerHTML = savedArticles.map(article => `
+        <a
+            href="#"
+            class="saved-item"
+        >
+            <img
+                src="${article.cover}"
+                alt="${article.title}"
+            >
+            <div>
+                <strong>
+                    ${article.title}
+                </strong>
+                <small>
+                    ${article.category} 
+                </small>
+            </div>
+            <span>
+                🔖
+            </span>
+        </a>
+    `).join('');
+}
 
 function renderCategories(articles) {
     const popularTopics = document.getElementById("popular-topics");
@@ -138,6 +163,8 @@ getArticles().then(articles => {
     console.log("Articles:", articles);
     renderCategories(articles);
     renderArticles(articles);
+    renderSavedList(articles.slice(0, 5)); // Render the first 5 articles as saved articles
 
 
 });
+

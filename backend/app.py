@@ -19,6 +19,8 @@ accounts = [
 ]
 
 ACCOUNTS_FILE = Path(__file__).resolve().with_name("accounts.json")
+POSTS_FILE = Path(__file__).resolve().with_name("posts.json")
+ARTICLES_FILE = Path(__file__).resolve().with_name("articles.json")
 
 with ACCOUNTS_FILE.open("r", encoding="utf-8-sig") as f:
     accounts = json.loads(f.read())
@@ -188,14 +190,19 @@ def forgot():
         })
 
 
-@app.get("/api/articles")
-def get_articles():
-    with open("posts.json", "r", encoding="utf-8") as file:
+@app.get("/api/articles-index")
+def get_article_index():
+    with POSTS_FILE.open("r", encoding="utf-8") as file:
         data = json.load(file)
 
     return jsonify(data)
 
+@app.get("/api/articles")
+def get_articles():
+    with ARTICLES_FILE.open("r", encoding="utf-8") as file:
+        data = json.load(file)
 
+    return jsonify(data)
         
 
 
