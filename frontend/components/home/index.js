@@ -74,54 +74,42 @@ function renderSavedList(savedArticles) {
 
 function renderCategories(articles) {
     const popularTopics = document.getElementById("popular-topics");
-    const countPostsByCategory = {};
+    const categoryCounts = {};
+    const categories = {};
+    const categoryIcons = {
+        math: "\u2211",
+        python: "Py",
+        literature: "\u{1F4D6}",
+        english: "Aa",
+        science: "\u269B"
+    };
 
     articles.forEach(article => {
-        const categoryClass = article.category_class;
-        if (countPostsByCategory[categoryClass]) {
-            countPostsByCategory[categoryClass]++;
-        } else {
-            countPostsByCategory[categoryClass] = 1;
-        }
+        const categoryClass = article.category_class || "other";
+        categoryCounts[categoryClass] = (categoryCounts[categoryClass] || 0) + 1;
+        categories[categoryClass] = article;
     });
 
-    console.log("Count of posts by category:", countPostsByCategory);
-    popularTopics.innerHTML = articles.map(article => `
-                    <a
-                        href="#"
-                        class="topic-card math"
-                    >
-
-                        <span class="topic-icon">
-                            ▦
-                        </span>
-
-                        <span class="topic-information">
-
-                            <strong>
-                                ${article.category}
-                            </strong>
-
-                            <small>
-                                ${countPostsByCategory[article.category_class]} bài viết
-                            </small>
-
-                        </span>
-
-                    </a>`
-    ).join('');
+    popularTopics.innerHTML = Object.entries(categories).map(([categoryClass, article]) => `
+        <a href="#" class="topic-card ${categoryClass}">
+            <span class="topic-icon">${categoryIcons[categoryClass] || "✦"}</span>
+            <span class="topic-information">
+                <strong>${article.category}</strong>
+                <small>${categoryCounts[categoryClass]} bài viết</small>
+            </span>
+        </a>
+    `).join("");
 }
-
 function renderArticles(articles) {
     const articlesContainer = document.getElementById("articles-container");
     
     const diffHours = Math.floor((new Date() - new Date(articles[0].publish_time)) / (1000 * 60 * 60));
     articlesContainer.innerHTML = articles.map(article => `
-                        <article class="featured-card">
-                        <a href="#" class="featured-image">
+                        <article class="featured-card" data-article="${article.slug}" tabindex="0" role="link">
+                        <a href="/components/articles/details/details.html?id=${encodeURIComponent(article.slug)}" class="featured-image">
                             <img src="${article.cover}" alt="${article.title}">
                     
-                            <span class="featured-category math">
+                            <span class="featured-category ${String(article.category || "").trim().toLowerCase() === "python" ? "python" : article.category_class || "other"}">
                                 ${article.category}
                             </span>
                         </a>
@@ -168,3 +156,32 @@ getArticles().then(articles => {
 
 });
 
+// Delegate clicks because article cards are rendered after the API request.
+const articlesContainer = document.getElementById("articles-container");
+
+articlesContainer.addEventListener("click", (event) => {
+    const bookmark = event.target.closest(".bookmark");
+    if (bookmark) {
+        event.preventDefault();
+        event.stopPropagation();
+        const isSaved = bookmark.classList.toggle("saved");
+        bookmark.textContent = isSaved ? "♥" : "♡";
+        return;
+    }
+
+    const card = event.target.closest(".featured-card");
+    if (card?.dataset.article) {
+        window.location.href = `/components/articles/details/details.html?id=${encodeURIComponent(card.dataset.article)}`;
+    }
+});
+
+articlesContainer.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    if (event.target.closest(".bookmark")) return;
+
+    const card = event.target.closest(".featured-card");
+    if (!card?.dataset.article) return;
+
+    event.preventDefault();
+    window.location.href = `/components/articles/details/details.html?id=${encodeURIComponent(card.dataset.article)}`;
+});

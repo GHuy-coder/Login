@@ -128,7 +128,7 @@ function renderArticles(articles) {
         <article class="article-card" data-article="${article.slug}" tabindex="0">
             <div class="article-cover">
                 <img src="${article.cover}" alt="${article.title}">
-                <span class="category-tag ${article.category_class}">${article.category}</span>
+                <span class="category-tag ${String(article.category || "").trim().toLowerCase() === "python" ? "python" : article.category_class || "other"}">${article.category}</span>
             </div>
             <div class="article-content">
                 <h2>${article.title}</h2>

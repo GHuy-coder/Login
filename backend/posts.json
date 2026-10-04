@@ -1,81 +1,28 @@
 [
-    {
-        "slug": "math-methods",
-        "category": "TOÁN HỌC",
-        "category_class": "math",
-        "title": "5 phương pháp học Toán hiệu quả giúp bạn tiến bộ mỗi ngày",
-        "introduction": "Tổng hợp 5 phương pháp học Toán khoa học, dễ áp dụng cho mọi học sinh. Áp dụng đều đặn mỗi ngày để đạt kết quả tốt hơn.",
-        "cover": "/assets/coolest.png",
-        "author": "Minh Anh",
-        "author_avatar": "/assets/don.png",
-        "class_name": "Lớp 10A1",
-        "reading_time": "5 phút đọc",
-        "number_readers": 1200,
-        "publish_time": "2026-09-27T08:00:00+07:00",
-        "sections": [
-            {
-                "title": "Hiểu chắc kiến thức cơ bản",
-                "paragraphs": [
-                    "Nền tảng vững chắc là chìa khóa để học tốt Toán. Hãy bắt đầu từ việc nắm vững các định nghĩa, công thức và định lý cơ bản.",
-                    "Đừng chỉ cố gắng ghi nhớ máy móc. Hãy tự hỏi vì sao một công thức lại được sử dụng và nó có ý nghĩa như thế nào."
-                ],
-                "bullets": [
-                    "Ôn tập lý thuyết sau mỗi buổi học.",
-                    "Ghi chú những câu hỏi hoặc kiến thức chưa hiểu.",
-                    "Làm lại các bài tập cơ bản để ghi nhớ lâu hơn."
-                ],
-                "tip": "Dành khoảng 15–20 phút mỗi ngày để ôn lại kiến thức cũ. Việc học đều đặn sẽ giúp bạn ghi nhớ lâu hơn.",
-                "code": null
-            },
-            {
-                "title": "Luyện tập thường xuyên",
-                "paragraphs": [
-                    "Toán học là môn cần thực hành liên tục. Sau khi hiểu lý thuyết, hãy bắt đầu bằng những bài tập cơ bản trước khi chuyển sang các dạng khó hơn."
-                ],
-                "bullets": [
-                    "Làm bài tập từ dễ đến khó.",
-                    "Ghi lại những bài làm sai.",
-                    "Thử giải lại bài toán sau một khoảng thời gian."
-                ],
-                "tip": "Hoàn thành ít nhất 5–10 bài tập mỗi ngày để duy trì thói quen học tập.",
-                "code": null
-            }
-        ]
-    },
-    {
-        "slug": "python-hello-world",
-        "category": "PYTHON",
-        "category_class": "python",
-        "title": "Làm quen Python: In ra dòng “Hello World!” đầu tiên",
-        "introduction": "Hướng dẫn cơ bản dành cho người mới bắt đầu làm quen với Python và chương trình đầu tiên.",
-        "cover": "/assets/frog.jpg",
-        "author": "Minh Anh",
-        "author_avatar": "/assets/don.png",
-        "class_name": "Lớp 10A1",
-        "reading_time": "4 phút đọc",
-        "number_readers": 1200,
-
-        "publish_time": "2026-09-27T08:00:00+07:00",
-        "sections": [
-            {
-                "title": "Python là gì?",
-                "paragraphs": [
-                    "Python là một ngôn ngữ lập trình phổ biến, có cú pháp dễ đọc và phù hợp với người mới bắt đầu."
-                ],
-                "bullets": [],
-                "tip": null,
-                "code": null
-            },
-            {
-                "title": "Chương trình đầu tiên",
-                "paragraphs": [
-                    "Sau khi cài đặt Python, bạn có thể tạo một tệp mới và viết chương trình đầu tiên của mình."
-                ],
-                "bullets": [],
-                "tip": "Hãy thử thay đổi nội dung bên trong dấu ngoặc kép và chạy lại chương trình.",
-                "code": "print(\"Hello World!\")"
-            }
-        ]
-    }
-
+  {
+    "slug": "math-methods",
+    "category": "TOÁN HỌC",
+    "category_class": "math",
+    "title": "5 phương pháp học Toán hiệu quả giúp bạn tiến bộ mỗi ngày",
+    "introduction": "Tổng hợp 5 phương pháp học Toán khoa học, dễ áp dụng cho mọi học sinh. Áp dụng đều đặn mỗi ngày để đạt kết quả tốt hơn.",
+    "cover": "/assets/coolest.png",
+    "author": "Minh Anh",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "5 phút đọc",
+    "number_readers": 1200,
+    "publish_time": "2026-09-27T08:00:00+07:00"
+  },
+  {
+    "slug": "python-hello-world",
+    "category": "PYTHON",
+    "category_class": "python",
+    "title": "Làm quen Python: In ra dòng “Hello World!” đầu tiên",
+    "introduction": "Hướng dẫn cơ bản dành cho người mới bắt đầu làm quen với Python và chương trình đầu tiên.",
+    "cover": "/assets/frog.jpg",
+    "author": "Minh Anh",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "4 phút đọc",
+    "number_readers": 1200,
+    "publish_time": "2026-09-27T08:00:00+07:00"
+  }
 ]

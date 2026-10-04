@@ -492,6 +492,7 @@ img {
 }
 
 .featured-card {
+    cursor: pointer;
     min-width: 0;
     overflow: hidden;
 
@@ -548,6 +549,10 @@ img {
 
 .featured-category.math {
     background: #63b470;
+}
+
+.featured-category.python {
+    background: #e3a636;
 }
 
 .featured-category.literature {
@@ -664,7 +669,8 @@ img {
 }
 
 .bookmark:hover,
-.save-btn:hover {
+.save-btn:hover,
+.bookmark.saved {
     color: var(--blue);
 }
 
