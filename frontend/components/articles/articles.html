@@ -346,58 +346,6 @@
 
 
             <!-- =================================================
-                 GRADE
-                 ================================================= -->
-
-            <section class="filter-section">
-
-                <h3>
-                    Khối lớp
-                </h3>
-
-
-                <label class="simple-filter">
-
-                    <input
-                        type="checkbox"
-                        name="grade"
-                        value="6-9"
-                    >
-
-                    <span>
-                        Lớp 6 - 7 - 8 - 9
-                    </span>
-
-                    <strong>
-                        1.956
-                    </strong>
-
-                </label>
-
-
-                <label class="simple-filter">
-
-                    <input
-                        type="checkbox"
-                        name="grade"
-                        value="10-12"
-                    >
-
-                    <span>
-                        Lớp 10 - 11 - 12
-                    </span>
-
-                    <strong>
-                        1.842
-                    </strong>
-
-                </label>
-
-            </section>
-
-
-
-            <!-- =================================================
                  READING TIME
                  ================================================= -->
 
@@ -558,44 +506,11 @@
                 </div>
 
 
-                <button
-                    type="button"
-                    class="toolbar-select"
-                >
+                <select class="toolbar-select" id="article-sort" aria-label="Sắp xếp bài viết">
+                    <option value="latest">Mới nhất</option>
+                    <option value="popular">Phổ biến</option>
+                </select>
 
-                    <span>
-                        Sắp xếp:
-                    </span>
-
-                    <strong>
-                        Mới nhất
-                    </strong>
-
-                    <span>
-                        ▼
-                    </span>
-
-                </button>
-
-
-                <button
-                    type="button"
-                    class="toolbar-select"
-                >
-
-                    <span>
-                        Hiển thị:
-                    </span>
-
-                    <strong>
-                        12 bài viết
-                    </strong>
-
-                    <span>
-                        ▼
-                    </span>
-
-                </button>
 
             </div>
 
@@ -780,7 +695,7 @@
 
                 <a
                     href="#"
-                    class="quick-filter-item active"
+                    class="quick-filter-item active" data-filter="latest"
                 >
                     Mới nhất
                 </a>
@@ -788,7 +703,7 @@
 
                 <a
                     href="#"
-                    class="quick-filter-item"
+                    class="quick-filter-item" data-filter="popular"
                 >
                     Phổ biến
                 </a>
@@ -833,6 +748,7 @@
                  ARTICLE GRID
                  ================================================= -->
 
+            <p id="article-results-status" class="article-results-status" role="status" aria-live="polite"></p>
             <div class="article-grid" id="articleGrid">
                 <!-- Article cards will be dynamically inserted here -->
 

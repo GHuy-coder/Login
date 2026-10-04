@@ -9,5 +9,82 @@
     "author": "Minh Anh",
     "author_avatar": "/assets/don.png",
     "reading_time": "2 giờ trước"
+  },
+  {
+    "slug": "vi-da",
+    "category": "VĂN",
+    "category_class": "literature",
+    "title": "Cảm nhận bài thơ \"Đây thôn Vĩ Dạ\" của Hàn Mặc Tử",
+    "introduction": "Phân tích vẻ đẹp bức tranh thiên nhiên và tâm trạng của tác giả trong bài thơ.",
+    "cover": "/assets/RODION.jpg",
+    "author": "Khánh Linh",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "1 ngày trước"
+  },
+  {
+    "slug": "english-phrases",
+    "category": "ANH",
+    "category_class": "english",
+    "title": "15 cụm từ tiếng Anh giao tiếp thông dụng hằng ngày",
+    "introduction": "Bỏ túi 15 cụm từ tiếng Anh giúp bạn tự tin hơn khi giao tiếp tiếng Anh.",
+    "cover": "/assets/Tam-&-GiaHuy.png",
+    "author": "Quang Huy",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "2 ngày trước"
+  },
+  {
+    "slug": "python-hello-world",
+    "category": "PYTHON",
+    "category_class": "python",
+    "title": "Làm quen Python: In ra dòng \"Hello World!\" đầu tiên",
+    "introduction": "Hướng dẫn cài đặt và chạy chương trình Python đơn giản cho người mới bắt đầu.",
+    "cover": "/assets/frog.jpg",
+    "author": "Minh Anh",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "3 ngày trước"
+  },
+  {
+    "slug": "dna",
+    "category": "KHOA HỌC",
+    "category_class": "science",
+    "title": "Cấu trúc DNA và vai trò trong di truyền",
+    "introduction": "Tìm hiểu cấu trúc xoắn kép của DNA và ý nghĩa trong sinh học.",
+    "cover": "/assets/dna.png",
+    "author": "Ngọc Hà",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "4 ngày trước"
+  },
+  {
+    "slug": "geometry-formulas",
+    "category": "TOÁN",
+    "category_class": "math",
+    "title": "Tổng hợp công thức hình học quan trọng",
+    "introduction": "Công thức tính diện tích, chu vi các hình thường gặp trong chương trình.",
+    "cover": "/assets/coolest.png",
+    "author": "Quang Huy",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "5 ngày trước"
+  },
+  {
+    "slug": "lang-le-sa-pa",
+    "category": "VĂN",
+    "category_class": "literature",
+    "title": "Phân tích truyện ngắn \"Lặng lẽ Sa Pa\"",
+    "introduction": "Phân tích nhân vật anh thanh niên và vẻ đẹp của những con người lao động.",
+    "cover": "/assets/RODION.jpg",
+    "author": "Khánh Linh",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "6 ngày trước"
+  },
+  {
+    "slug": "english-sentence",
+    "category": "ANH",
+    "category_class": "english",
+    "title": "Cấu trúc câu trong tiếng Anh cơ bản",
+    "introduction": "Tổng hợp các cấu trúc câu cơ bản giúp bạn xây nền tảng ngữ pháp vững chắc.",
+    "cover": "/assets/Tam-&-GiaHuy.png",
+    "author": "Minh Anh",
+    "author_avatar": "/assets/don.png",
+    "reading_time": "1 tuần trước"
   }
 ]
