@@ -67,3 +67,8 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# User-uploaded profile images
+backend/images/*
+!backend/images/.gitkeep
+backend/venv
