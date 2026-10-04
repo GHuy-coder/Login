@@ -2,5 +2,6 @@ services:
   - type: web
     name: login-api
     runtime: python
+    rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn backend.app:app
+    startCommand: gunicorn app:app
