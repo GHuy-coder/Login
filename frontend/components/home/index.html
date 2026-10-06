@@ -112,34 +112,52 @@
 
 
             <!-- USER -->
-            <button
-                type="button"
-                class="user-account"
-                aria-label="Tài khoản"
-            >
-
-                <img
-                    src="/assets/DON-CUTE.jpg"
-                    alt="Gia Huy"
+            <div class="user-menu" id="user-menu">
+                <button
+                    type="button"
+                    class="user-account"
+                    id="user-menu-toggle"
+                    aria-label="Mở menu tài khoản"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    aria-controls="user-dropdown"
                 >
 
-                <span class="user-text">
+                    <img
+                        id="user-avatar"
+                        src="/assets/DON-CUTE.jpg"
+                        alt="Ảnh đại diện người dùng"
+                    >
 
-                    <strong>
-                        Chào, Gia Huy
-                    </strong>
+                    <span class="user-text">
 
-                    <small>
-                        Lớp 10A1
-                    </small>
+                        <strong id="user-fullname">
+                            Chào, bạn
+                        </strong>
 
-                </span>
+                        <small id="user-classroom">
+                        </small>
 
-                <span class="user-arrow" id="user-arrow">
-                    ▼
-                </span>
+                    </span>
 
-            </button>
+                    <span class="user-arrow" id="user-arrow" aria-hidden="true">
+                        ▼
+                    </span>
+
+                </button>
+
+                <div class="user-dropdown" id="user-dropdown" role="menu" hidden>
+                    <a href="/components/profile/profile.html" class="user-dropdown-item" id="user-info-button" role="menuitem">
+                        <span aria-hidden="true">👤</span>
+                        Thông tin
+                    </a>
+
+                    <button type="button" class="user-dropdown-item logout-button" id="logout-button" role="menuitem">
+                        <span aria-hidden="true">↪</span>
+                        Đăng xuất
+                    </button>
+                </div>
+            </div>
 
         </div>
 
@@ -168,8 +186,8 @@
 
                 <div class="hero-content">
 
-                    <p class="hero-greeting">
-                        Xin chào Gia Huy! 👋
+                    <p class="hero-greeting" id="hero-greeting">
+                        Xin chào bạn! 👋
                     </p>
 
 

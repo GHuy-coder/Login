@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Học Sinh — Thông tin tài khoản</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="/components/menu.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="/components/home/index.html" class="logo" aria-label="Blog Học Sinh">
+            <img src="/assets/logo.png" alt="Blog Học Sinh">
+        </a>
+
+        <nav class="main-nav" aria-label="Điều hướng chính">
+            <a href="/components/home/index.html">🏠 <span>Trang chủ</span></a>
+            <a href="/components/articles/articles.html">📄 <span>Bài viết</span></a>
+            <a href="#">🧠 <span>Chủ đề</span></a>
+            <a href="#">📝 <span>Bài tập</span></a>
+        </nav>
+
+        <div class="header-right">
+            <div class="header-search">
+                <input type="search" placeholder="Tìm kiếm bài viết, chủ đề..." aria-label="Tìm kiếm">
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <button type="button" class="notification" aria-label="Thông báo">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </button>
+
+            <div class="user-menu" id="user-menu">
+                <button
+                    type="button"
+                    class="user-account"
+                    id="user-menu-toggle"
+                    aria-label="Mở menu tài khoản"
+                    aria-haspopup="menu"
+                    aria-expanded="false"
+                    aria-controls="user-dropdown"
+                >
+                    <img id="user-avatar" src="/assets/DON-CUTE.jpg" alt="Ảnh đại diện người dùng">
+                    <span class="user-text">
+                        <strong id="user-fullname">Chào, bạn</strong>
+                        <small id="user-classroom"></small>
+                    </span>
+                    <span class="user-arrow" aria-hidden="true">▼</span>
+                </button>
+
+                <div class="user-dropdown" id="user-dropdown" role="menu" hidden>
+                    <a href="/components/profile/profile.html" class="user-dropdown-item active-item" role="menuitem">
+                        <span aria-hidden="true">👤</span>
+                        Thông tin
+                    </a>
+                    <button type="button" class="user-dropdown-item logout-button" id="logout-button" role="menuitem">
+                        <span aria-hidden="true">↪</span>
+                        Đăng xuất
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <section class="profile-heading">
+            <div>
+                <p class="eyebrow">TÀI KHOẢN CỦA BẠN</p>
+                <h1>Thông tin cá nhân</h1>
+                <p>Cập nhật thông tin để hồ sơ của bạn luôn chính xác.</p>
+            </div>
+            <a href="/components/home/index.html" class="back-link">← Về trang chủ</a>
+        </section>
+
+        <div class="profile-layout">
+            <aside class="profile-preview">
+                <img id="profile-avatar-preview" src="/assets/DON-CUTE.jpg" alt="Ảnh đại diện">
+                <h2 id="profile-name-preview">Bạn</h2>
+                <p id="profile-class-preview">Học sinh</p>
+                <span class="account-badge">Tài khoản học sinh</span>
+            </aside>
+
+            <section class="profile-card">
+                <div class="card-heading">
+                    <div>
+                        <h2>Chỉnh sửa thông tin</h2>
+                        <p>Những thay đổi sẽ được cập nhật trên tài khoản của bạn.</p>
+                    </div>
+                    <span aria-hidden="true">✏️</span>
+                </div>
+
+                <form id="profile-form">
+                    <div class="form-grid">
+                        <label class="form-field">
+                            <span>Họ và tên</span>
+                            <input type="text" id="fullname" name="fullname" required autocomplete="name">
+                        </label>
+
+                        <label class="form-field">
+                            <span>Lớp</span>
+                            <input type="text" id="classroom" name="classroom" required placeholder="Ví dụ: 10A1">
+                        </label>
+
+                        <label class="form-field full-width">
+                            <span>Email</span>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </label>
+
+                        <label class="form-field full-width">
+                            <span>Ảnh đại diện</span>
+                            <input type="file" id="avatar" name="avatar" accept="image/png,image/jpeg,image/gif,image/webp">
+                            <small>Chọn ảnh PNG, JPG, GIF hoặc WebP, dung lượng tối đa 5 MB.</small>
+                        </label>
+                    </div>
+
+                    <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+                    <div class="form-actions">
+                        <button type="button" class="secondary-button" id="cancel-button">Hủy thay đổi</button>
+                        <button type="submit" class="primary-button" id="save-button">Lưu thông tin</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Blog Học Sinh</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>

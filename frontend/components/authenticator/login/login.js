@@ -29,7 +29,7 @@ async function sendData() {
         if (value.success) {
             // điều hướng tới trang index
             localStorage.setItem("users", JSON.stringify({
-                email: email,
+                ...value.user,
                 login_time: Date()
             }))
             window.location.href = "/components/home/index.html"
