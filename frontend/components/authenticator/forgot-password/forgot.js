@@ -5,7 +5,7 @@ function backFunction() {
 }
 
 const forgotForm = document.getElementById("forgot-form")
-const apiUrl = "http://127.0.0.1:5000/api"
+const apiUrl = "https://login-wv2x.onrender.com/api"
 
 
 async function sendData() {

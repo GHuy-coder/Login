@@ -1,4 +1,4 @@
-const apiUrl = "http://127.0.0.1:5000/api";
+﻿const apiUrl = "https://login-wv2x.onrender.com/api";
 const articlesGrid = document.getElementById("articleGrid");
 const searchInput = document.getElementById("article-search");
 const headerSearchInput = document.getElementById("header-search");

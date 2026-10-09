@@ -28,7 +28,7 @@ logout.addEventListener("click", function (){
 
 
 // get all posts from api
-const apiUrl = "http://127.0.0.1:5000/api"
+const apiUrl = "https://login-wv2x.onrender.com/api"
 
 async function getArticles() {
     try {
