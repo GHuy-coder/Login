@@ -4,25 +4,73 @@ window.history.replaceState({}, "", "/");
 
 
 // kiểm tra login chưa bằng cách kiểm tra storage
-function checkLogin() {
-    const user_storage = localStorage.getItem("users")
-    if (!user_storage) {
-        window.location.href = "/components/authenticator/login/login.html"
+function getStoredUser() {
+    const userStorage = localStorage.getItem("users")
 
+    if (!userStorage) {
+        window.location.href = "/components/authenticator/login/login.html"
+        return null
+    }
+
+    try {
+        return JSON.parse(userStorage)
+    } catch (error) {
+        localStorage.removeItem("users")
+        window.location.href = "/components/authenticator/login/login.html"
+        return null
     }
 }
 
-checkLogin()
+function renderUser(user) {
+    if (!user) return
 
-// logout
-const logout = document.getElementById("user-arrow")
+    const displayName = user.fullname?.trim() || "bạn"
 
-logout.addEventListener("click", function (){
-    const user_storage = localStorage.clear("users")
-    if (!user_storage){
-        window.location.href = "/components/authenticator/login/login.html"
+    document.getElementById("user-fullname").textContent = `Chào, ${displayName}`
+    document.getElementById("user-classroom").textContent = user.classroom
+        ? `Lớp ${user.classroom}`
+        : ""
+    document.getElementById("hero-greeting").textContent = `Xin chào ${displayName}! 👋`
 
+    const avatar = document.getElementById("user-avatar")
+    avatar.src = user.avatar || "/assets/DON-CUTE.jpg"
+    avatar.alt = user.fullname || user.email
+}
+
+renderUser(getStoredUser())
+
+// menu tài khoản
+const userMenu = document.getElementById("user-menu")
+const userMenuToggle = document.getElementById("user-menu-toggle")
+const userDropdown = document.getElementById("user-dropdown")
+const logoutButton = document.getElementById("logout-button")
+
+function setUserMenuOpen(isOpen) {
+    userMenu.classList.toggle("open", isOpen)
+    userDropdown.hidden = !isOpen
+    userMenuToggle.setAttribute("aria-expanded", String(isOpen))
+}
+
+userMenuToggle.addEventListener("click", function () {
+    setUserMenuOpen(userDropdown.hidden)
+})
+
+document.addEventListener("click", function (event) {
+    if (!userMenu.contains(event.target)) {
+        setUserMenuOpen(false)
     }
+})
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !userDropdown.hidden) {
+        setUserMenuOpen(false)
+        userMenuToggle.focus()
+    }
+})
+
+logoutButton.addEventListener("click", function () {
+    localStorage.removeItem("users")
+    window.location.href = "/components/authenticator/login/login.html"
 })
 
 
